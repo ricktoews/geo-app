@@ -285,7 +285,8 @@
     },
     {
         "country": "Iceland",
-        "continent": "Europe"
+        "continent": "Europe",
+        "island": true
     },
     {
         "country": "India",
@@ -305,7 +306,8 @@
     },
     {
         "country": "Ireland",
-        "continent": "Europe"
+        "continent": "Europe",
+        "island": true
     },
     {
         "country": "Israel",
@@ -413,7 +415,8 @@
     },
     {
         "country": "Malta",
-        "continent": "Europe"
+        "continent": "Europe",
+        "island": true
     },
     {
         "country": "Marshall Islands",

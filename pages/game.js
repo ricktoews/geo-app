@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import ImageGrid from '../components/ImageGrid';
 import { getGeoPath } from '../utils/get-path';
 
-import countries from '../data/countries.json';
+import countries from '../data/borders.json';
 
 
 export default function Game(props) {
@@ -13,7 +13,7 @@ export default function Game(props) {
     const [geoPath, setGeoPath] = useState();
 
     useEffect(() => {
-        const pool = countries.filter(country => country.continent === 'Europe');
+        const pool = countries.filter(country => country.continent === 'Europe' && country.borders.length > 0 && !country.nopath);
         setCountryPool(pool);
         setFilenames(pool.map(item => item.country));
         const countryCount = pool.length;
@@ -26,10 +26,12 @@ export default function Game(props) {
     }, []);
 
     useEffect(() => {
-        console.log(`====> origin ${origCountry}, dest ${destCountry}`);
-        const result = getGeoPath(origCountry, destCountry);
-        setGeoPath(result.path);
-        console.log('====> Path', geoPath);
+        if (origCountry.length > 0 && destCountry.length > 0) {
+            console.log(`====> origin ${origCountry}, dest ${destCountry}`);
+            const result = getGeoPath(origCountry, destCountry);
+            setGeoPath(result.path);
+            console.log('====> Path', result.path);
+        }
     }, [origCountry, destCountry])
 
     function makeFileName(str) {

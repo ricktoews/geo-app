@@ -1,21 +1,15 @@
 [
     {
-        "country": "Abkhazia",
-        "borders": [
-            "Russia",
-            "Georgia"
-        ]
-    },
-    {
         "country": "Afghanistan",
         "borders": [
-            "People's Republic of China",
+            "China",
             "Iran",
             "Pakistan",
             "Tajikistan",
             "Turkmenistan",
             "Uzbekistan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Albania",
@@ -23,7 +17,8 @@
             "Greece",
             "North Macedonia",
             "Montenegro"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Algeria",
@@ -34,14 +29,16 @@
             "Morocco",
             "Niger",
             "Tunisia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Andorra",
         "borders": [
             "France",
             "Spain"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Angola",
@@ -50,11 +47,13 @@
             "Republic of the Congo",
             "Namibia",
             "Zambia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Antigua and Barbuda",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Argentina",
@@ -64,7 +63,8 @@
             "Chile",
             "Paraguay",
             "Uruguay"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Armenia",
@@ -73,16 +73,18 @@
             "Georgia",
             "Iran",
             "Turkey"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Australia",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Austria",
         "borders": [
-            "Czech Republic",
+            "Czechia",
             "Germany",
             "Hungary",
             "Italy",
@@ -90,7 +92,8 @@
             "Slovakia",
             "Slovenia",
             "Switzerland"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Azerbaijan",
@@ -100,26 +103,31 @@
             "Iran",
             "Russia",
             "Turkey"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Bahamas",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Bahrain",
-        "borders": []
+        "borders": [],
+        "continent": "Asia"
     },
     {
         "country": "Bangladesh",
         "borders": [
             "India",
             "Myanmar"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Barbados",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Belarus",
@@ -129,7 +137,8 @@
             "Poland",
             "Russia",
             "Ukraine"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Belgium",
@@ -138,14 +147,16 @@
             "Germany",
             "Luxembourg",
             "Netherlands"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Belize",
         "borders": [
             "Guatemala",
             "Mexico"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Benin",
@@ -154,14 +165,16 @@
             "Niger",
             "Nigeria",
             "Togo"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Bhutan",
         "borders": [
-            "People's Republic of China",
+            "China",
             "India"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Bolivia",
@@ -171,7 +184,8 @@
             "Chile",
             "Paraguay",
             "Peru"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Bosnia and Herzegovina",
@@ -179,7 +193,8 @@
             "Croatia",
             "Montenegro",
             "Serbia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Botswana",
@@ -188,7 +203,8 @@
             "South Africa",
             "Zambia",
             "Zimbabwe"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Brazil",
@@ -203,13 +219,15 @@
             "Suriname",
             "Uruguay",
             "Venezuela"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Brunei",
         "borders": [
             "Malaysia"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Bulgaria",
@@ -219,18 +237,20 @@
             "Romania",
             "Serbia",
             "Turkey"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Burkina Faso",
         "borders": [
             "Benin",
-            "Côte d'Ivoire",
+            "Ivory Coast",
             "Ghana",
             "Mali",
             "Niger",
             "Togo"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Burundi",
@@ -238,7 +258,8 @@
             "Democratic Republic of the Congo",
             "Rwanda",
             "Tanzania"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Cambodia",
@@ -246,7 +267,8 @@
             "Laos",
             "Thailand",
             "Vietnam"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Cameroon",
@@ -257,17 +279,20 @@
             "Equatorial Guinea",
             "Gabon",
             "Nigeria"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Canada",
         "borders": [
             "United States"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Cape Verde",
-        "borders": []
+        "borders": [],
+        "continent": "Africa"
     },
     {
         "country": "Central African Republic",
@@ -278,7 +303,8 @@
             "Republic of the Congo",
             "South Sudan",
             "Sudan"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Chad",
@@ -289,7 +315,8 @@
             "Niger",
             "Nigeria",
             "Sudan"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Chile",
@@ -297,10 +324,11 @@
             "Argentina",
             "Bolivia",
             "Peru"
-        ]
+        ],
+        "continent": "South America"
     },
     {
-        "country": "People's Republic of China",
+        "country": "China",
         "borders": [
             "Afghanistan",
             "Bhutan",
@@ -315,7 +343,8 @@
             "Russia",
             "Tajikistan",
             "Vietnam"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Colombia",
@@ -325,11 +354,13 @@
             "Panama",
             "Peru",
             "Venezuela"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Comoros",
-        "borders": []
+        "borders": [],
+        "continent": "Africa"
     },
     {
         "country": "Democratic Republic of the Congo",
@@ -343,7 +374,8 @@
             "Tanzania",
             "Uganda",
             "Zambia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Republic of the Congo",
@@ -353,24 +385,27 @@
             "Central African Republic",
             "Democratic Republic of the Congo",
             "Gabon"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Costa Rica",
         "borders": [
             "Nicaragua",
             "Panama"
-        ]
+        ],
+        "continent": "North America"
     },
     {
-        "country": "Côte d'Ivoire",
+        "country": "Ivory Coast",
         "borders": [
             "Burkina Faso",
             "Ghana",
             "Guinea",
             "Liberia",
             "Mali"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Croatia",
@@ -380,62 +415,71 @@
             "Montenegro",
             "Serbia",
             "Slovenia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Cuba",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Cyprus",
-        "borders": [
-            "United Kingdom"
-        ]
+        "borders": [],
+        "continent": "Europe"
     },
     {
-        "country": "Czech Republic",
+        "country": "Czechia",
         "borders": [
             "Austria",
             "Germany",
             "Poland",
             "Slovakia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Denmark",
         "borders": [
             "Germany"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Djibouti",
         "borders": [
             "Eritrea",
             "Ethiopia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Dominica",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Dominican Republic",
         "borders": [
             "Haiti"
-        ]
+        ],
+        "continent": "North America",
+        "nopath": true
     },
     {
         "country": "East Timor",
         "borders": [
             "Indonesia"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Ecuador",
         "borders": [
             "Colombia",
             "Peru"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Egypt",
@@ -443,21 +487,24 @@
             "Israel",
             "Libya",
             "Sudan"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "El Salvador",
         "borders": [
             "Guatemala",
             "Honduras"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Equatorial Guinea",
         "borders": [
             "Cameroon",
             "Gabon"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Eritrea",
@@ -465,21 +512,24 @@
             "Djibouti",
             "Ethiopia",
             "Sudan"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Estonia",
         "borders": [
             "Latvia",
             "Russia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Eswatini",
         "borders": [
             "Mozambique",
             "South Africa"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Ethiopia",
@@ -490,11 +540,13 @@
             "Somalia",
             "South Sudan",
             "Sudan"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Fiji",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Finland",
@@ -502,7 +554,8 @@
             "Norway",
             "Sweden",
             "Russia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "France",
@@ -515,7 +568,8 @@
             "Monaco",
             "Spain",
             "Switzerland"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Gabon",
@@ -523,13 +577,15 @@
             "Cameroon",
             "Republic of the Congo",
             "Equatorial Guinea"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "The Gambia",
         "borders": [
             "Senegal"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Georgia",
@@ -537,32 +593,33 @@
             "Armenia",
             "Azerbaijan",
             "Russia",
-            "Turkey",
-            "Abkhazia",
-            "South Ossetia"
-        ]
+            "Turkey"
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Germany",
         "borders": [
             "Austria",
             "Belgium",
-            "Czech Republic",
+            "Czechia",
             "Denmark",
             "France",
             "Luxembourg",
             "Netherlands",
             "Poland",
             "Switzerland"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Ghana",
         "borders": [
             "Burkina Faso",
-            "Côte d'Ivoire",
+            "Ivory Coast",
             "Togo"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Greece",
@@ -571,11 +628,13 @@
             "Bulgaria",
             "Turkey",
             "North Macedonia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Grenada",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Guatemala",
@@ -584,25 +643,28 @@
             "El Salvador",
             "Honduras",
             "Mexico"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Guinea",
         "borders": [
-            "Côte d'Ivoire",
+            "Ivory Coast",
             "Guinea-Bissau",
             "Liberia",
             "Mali",
             "Senegal",
             "Sierra Leone"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Guinea-Bissau",
         "borders": [
             "Guinea",
             "Senegal"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Guyana",
@@ -610,13 +672,16 @@
             "Brazil",
             "Suriname",
             "Venezuela"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Haiti",
         "borders": [
             "Dominican Republic"
-        ]
+        ],
+        "continent": "North America",
+        "nopath": true
     },
     {
         "country": "Honduras",
@@ -624,13 +689,8 @@
             "Guatemala",
             "El Salvador",
             "Nicaragua"
-        ]
-    },
-    {
-        "country": "Hong Kong",
-        "borders": [
-            "People's Republic of China"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Hungary",
@@ -642,11 +702,13 @@
             "Slovakia",
             "Slovenia",
             "Ukraine"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Iceland",
-        "borders": []
+        "borders": [],
+        "continent": "Europe"
     },
     {
         "country": "India",
@@ -654,11 +716,12 @@
             "Afghanistan",
             "Bangladesh",
             "Bhutan",
-            "People's Republic of China",
+            "China",
             "Myanmar",
             "Nepal",
             "Pakistan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Indonesia",
@@ -666,7 +729,8 @@
             "East Timor",
             "Malaysia",
             "Papua New Guinea"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Iran",
@@ -678,7 +742,8 @@
             "Pakistan",
             "Turkey",
             "Turkmenistan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Iraq",
@@ -689,13 +754,16 @@
             "Saudi Arabia",
             "Syria",
             "Turkey"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Ireland",
         "borders": [
             "United Kingdom"
-        ]
+        ],
+        "continent": "Europe",
+        "nopath": true
     },
     {
         "country": "Israel",
@@ -706,7 +774,8 @@
             "Lebanon",
             "Syria",
             "Palestine"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Italy",
@@ -717,15 +786,18 @@
             "Slovenia",
             "Switzerland",
             "Vatican City"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Jamaica",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Japan",
-        "borders": []
+        "borders": [],
+        "continent": "Asia"
     },
     {
         "country": "Jordan",
@@ -735,17 +807,19 @@
             "Saudi Arabia",
             "Syria",
             "Palestine"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Kazakhstan",
         "borders": [
-            "People's Republic of China",
+            "China",
             "Kyrgyzstan",
             "Russia",
             "Turkmenistan",
             "Uzbekistan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Kenya",
@@ -755,25 +829,29 @@
             "South Sudan",
             "Tanzania",
             "Uganda"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Kiribati",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "North Korea",
         "borders": [
-            "People's Republic of China",
+            "China",
             "South Korea",
             "Russia"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "South Korea",
         "borders": [
             "North Korea"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Kosovo",
@@ -782,33 +860,37 @@
             "Montenegro",
             "North Macedonia",
             "Serbia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Kuwait",
         "borders": [
             "Iraq",
             "Saudi Arabia"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Kyrgyzstan",
         "borders": [
-            "People's Republic of China",
+            "China",
             "Kazakhstan",
             "Tajikistan",
             "Uzbekistan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Laos",
         "borders": [
             "Cambodia",
-            "People's Republic of China",
+            "China",
             "Myanmar",
             "Thailand",
             "Vietnam"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Latvia",
@@ -817,28 +899,32 @@
             "Estonia",
             "Lithuania",
             "Russia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Lebanon",
         "borders": [
             "Israel",
             "Syria"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Lesotho",
         "borders": [
             "South Africa"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Liberia",
         "borders": [
             "Guinea",
-            "Côte d'Ivoire",
+            "Ivory Coast",
             "Sierra Leone"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Libya",
@@ -849,14 +935,16 @@
             "Niger",
             "Sudan",
             "Tunisia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Liechtenstein",
         "borders": [
             "Austria",
             "Switzerland"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Lithuania",
@@ -865,7 +953,8 @@
             "Latvia",
             "Poland",
             "Russia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Luxembourg",
@@ -873,21 +962,13 @@
             "Belgium",
             "France",
             "Germany"
-        ]
-    },
-    {
-        "country": "Macau",
-        "borders": [
-            "People's Republic of China"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Madagascar",
-        "borders": []
-    },
-    {
-        "country": "Madeira",
-        "borders": []
+        "borders": [],
+        "continent": "Africa"
     },
     {
         "country": "Malawi",
@@ -895,7 +976,8 @@
             "Mozambique",
             "Tanzania",
             "Zambia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Malaysia",
@@ -903,31 +985,36 @@
             "Brunei",
             "Indonesia",
             "Thailand"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Maldives",
-        "borders": []
+        "borders": [],
+        "continent": "Asia"
     },
     {
         "country": "Mali",
         "borders": [
             "Algeria",
             "Burkina Faso",
-            "Côte d'Ivoire",
+            "Ivory Coast",
             "Guinea",
             "Mauritania",
             "Niger",
             "Senegal"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Malta",
-        "borders": []
+        "borders": [],
+        "continent": "Europe"
     },
     {
         "country": "Marshall Islands",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Mauritania",
@@ -935,11 +1022,13 @@
             "Algeria",
             "Mali",
             "Senegal"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Mauritius",
-        "borders": []
+        "borders": [],
+        "continent": "Africa"
     },
     {
         "country": "Mexico",
@@ -947,31 +1036,36 @@
             "Belize",
             "Guatemala",
             "United States"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Federated States of Micronesia",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Moldova",
         "borders": [
             "Romania",
             "Ukraine"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Monaco",
         "borders": [
             "France"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Mongolia",
         "borders": [
-            "People's Republic of China",
+            "China",
             "Russia"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Montenegro",
@@ -980,14 +1074,16 @@
             "Bosnia and Herzegovina",
             "Croatia",
             "Serbia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Morocco",
         "borders": [
             "Algeria",
             "Spain"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Mozambique",
@@ -998,17 +1094,19 @@
             "Tanzania",
             "Zambia",
             "Zimbabwe"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Myanmar",
         "borders": [
             "Bangladesh",
-            "People's Republic of China",
+            "China",
             "India",
             "Laos",
             "Thailand"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Namibia",
@@ -1017,18 +1115,21 @@
             "Botswana",
             "South Africa",
             "Zambia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Nauru",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Nepal",
         "borders": [
-            "People's Republic of China",
+            "China",
             "India"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Netherlands",
@@ -1036,18 +1137,21 @@
             "Belgium",
             "Germany",
             "France"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "New Zealand",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Nicaragua",
         "borders": [
             "Costa Rica",
             "Honduras"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Niger",
@@ -1059,7 +1163,8 @@
             "Libya",
             "Mali",
             "Nigeria"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Nigeria",
@@ -1068,7 +1173,8 @@
             "Cameroon",
             "Chad",
             "Niger"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "North Macedonia",
@@ -1077,7 +1183,8 @@
             "Bulgaria",
             "Greece",
             "Serbia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Norway",
@@ -1085,7 +1192,8 @@
             "Finland",
             "Sweden",
             "Russia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Oman",
@@ -1093,7 +1201,8 @@
             "Saudi Arabia",
             "United Arab Emirates",
             "Yemen"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Pakistan",
@@ -1101,12 +1210,14 @@
             "Afghanistan",
             "India",
             "Iran",
-            "People's Republic of China"
-        ]
+            "China"
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Palau",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Palestine",
@@ -1114,20 +1225,23 @@
             "Egypt",
             "Israel",
             "Jordan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Panama",
         "borders": [
             "Colombia",
             "Costa Rica"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Papua New Guinea",
         "borders": [
             "Indonesia"
-        ]
+        ],
+        "continent": "Oceania"
     },
     {
         "country": "Paraguay",
@@ -1135,7 +1249,8 @@
             "Argentina",
             "Bolivia",
             "Brazil"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Peru",
@@ -1145,35 +1260,40 @@
             "Chile",
             "Colombia",
             "Ecuador"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Philippines",
-        "borders": []
+        "borders": [],
+        "continent": "Asia"
     },
     {
         "country": "Poland",
         "borders": [
             "Belarus",
-            "Czech Republic",
+            "Czechia",
             "Germany",
             "Lithuania",
             "Russia",
             "Slovakia",
             "Ukraine"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Portugal",
         "borders": [
             "Spain"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Qatar",
         "borders": [
             "Saudi Arabia"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Romania",
@@ -1183,14 +1303,15 @@
             "Moldova",
             "Serbia",
             "Ukraine"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Russia",
         "borders": [
             "Azerbaijan",
             "Belarus",
-            "People's Republic of China",
+            "China",
             "Estonia",
             "Finland",
             "Georgia",
@@ -1201,10 +1322,9 @@
             "Mongolia",
             "Norway",
             "Poland",
-            "Ukraine",
-            "South Ossetia",
-            "Abkhazia"
-        ]
+            "Ukraine"
+        ],
+        "continent": "Europe/Asia"
     },
     {
         "country": "Rwanda",
@@ -1213,33 +1333,40 @@
             "Democratic Republic of the Congo",
             "Tanzania",
             "Uganda"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Saint Kitts and Nevis",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Saint Lucia",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Saint Vincent and the Grenadines",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Samoa",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "San Marino",
         "borders": [
             "Italy"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "São Tomé and Príncipe",
-        "borders": []
+        "borders": [],
+        "continent": "Africa"
     },
     {
         "country": "Saudi Arabia",
@@ -1251,7 +1378,8 @@
             "Qatar",
             "United Arab Emirates",
             "Yemen"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Senegal",
@@ -1261,7 +1389,8 @@
             "Guinea-Bissau",
             "Mali",
             "Mauritania"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Serbia",
@@ -1273,32 +1402,37 @@
             "Montenegro",
             "North Macedonia",
             "Romania"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Seychelles",
-        "borders": []
+        "borders": [],
+        "continent": "Africa"
     },
     {
         "country": "Sierra Leone",
         "borders": [
             "Guinea",
             "Liberia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Singapore",
-        "borders": []
+        "borders": [],
+        "continent": "Asia"
     },
     {
         "country": "Slovakia",
         "borders": [
             "Austria",
-            "Czech Republic",
+            "Czechia",
             "Hungary",
             "Poland",
             "Ukraine"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Slovenia",
@@ -1307,11 +1441,13 @@
             "Croatia",
             "Italy",
             "Hungary"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Solomon Islands",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Somalia",
@@ -1319,7 +1455,8 @@
             "Djibouti",
             "Ethiopia",
             "Kenya"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "South Africa",
@@ -1330,14 +1467,8 @@
             "Mozambique",
             "Namibia",
             "Zimbabwe"
-        ]
-    },
-    {
-        "country": "South Ossetia",
-        "borders": [
-            "Russia",
-            "Georgia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "South Sudan",
@@ -1348,7 +1479,8 @@
             "Kenya",
             "Sudan",
             "Uganda"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Spain",
@@ -1357,11 +1489,13 @@
             "France",
             "Portugal",
             "Morocco"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Sri Lanka",
-        "borders": []
+        "borders": [],
+        "continent": "Asia"
     },
     {
         "country": "Sudan",
@@ -1373,7 +1507,8 @@
             "Ethiopia",
             "Libya",
             "South Sudan"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Suriname",
@@ -1381,14 +1516,16 @@
             "Brazil",
             "France",
             "Guyana"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Sweden",
         "borders": [
             "Finland",
             "Norway"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Switzerland",
@@ -1398,7 +1535,8 @@
             "Italy",
             "Liechtenstein",
             "Germany"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Syria",
@@ -1408,16 +1546,18 @@
             "Jordan",
             "Lebanon",
             "Turkey"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Tajikistan",
         "borders": [
             "Afghanistan",
-            "People's Republic of China",
+            "China",
             "Kyrgyzstan",
             "Uzbekistan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Tanzania",
@@ -1430,7 +1570,8 @@
             "Rwanda",
             "Uganda",
             "Zambia"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Thailand",
@@ -1439,7 +1580,8 @@
             "Laos",
             "Malaysia",
             "Myanmar"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Togo",
@@ -1447,22 +1589,26 @@
             "Benin",
             "Burkina Faso",
             "Ghana"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Tonga",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Trinidad and Tobago",
-        "borders": []
+        "borders": [],
+        "continent": "North America"
     },
     {
         "country": "Tunisia",
         "borders": [
             "Algeria",
             "Libya"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Turkey",
@@ -1475,7 +1621,8 @@
             "Iran",
             "Iraq",
             "Syria"
-        ]
+        ],
+        "continent": "Europe/Asia"
     },
     {
         "country": "Turkmenistan",
@@ -1484,11 +1631,13 @@
             "Iran",
             "Kazakhstan",
             "Uzbekistan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Tuvalu",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Uganda",
@@ -1498,7 +1647,8 @@
             "Rwanda",
             "South Sudan",
             "Tanzania"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Ukraine",
@@ -1510,42 +1660,40 @@
             "Romania",
             "Russia",
             "Slovakia"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "United Arab Emirates",
         "borders": [
             "Oman",
             "Saudi Arabia"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "United Kingdom",
         "borders": [
             "Ireland"
-        ]
-    },
-    {
-        "country": "United Kingdom",
-        "borders": [
-            "Cyprus",
-            "Ireland",
-            "Spain"
-        ]
+        ],
+        "continent": "Europe",
+        "nopath": true
     },
     {
         "country": "United States",
         "borders": [
             "Canada",
             "Mexico"
-        ]
+        ],
+        "continent": "North America"
     },
     {
         "country": "Uruguay",
         "borders": [
             "Argentina",
             "Brazil"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Uzbekistan",
@@ -1555,17 +1703,20 @@
             "Kyrgyzstan",
             "Tajikistan",
             "Turkmenistan"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Vanuatu",
-        "borders": []
+        "borders": [],
+        "continent": "Oceania"
     },
     {
         "country": "Vatican City",
         "borders": [
             "Italy"
-        ]
+        ],
+        "continent": "Europe"
     },
     {
         "country": "Venezuela",
@@ -1573,15 +1724,17 @@
             "Brazil",
             "Colombia",
             "Guyana"
-        ]
+        ],
+        "continent": "South America"
     },
     {
         "country": "Vietnam",
         "borders": [
             "Cambodia",
-            "People's Republic of China",
+            "China",
             "Laos"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Western Sahara",
@@ -1589,14 +1742,16 @@
             "Algeria",
             "Mauritania",
             "Morocco"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Yemen",
         "borders": [
             "Oman",
             "Saudi Arabia"
-        ]
+        ],
+        "continent": "Asia"
     },
     {
         "country": "Zambia",
@@ -1609,7 +1764,8 @@
             "Namibia",
             "Tanzania",
             "Zimbabwe"
-        ]
+        ],
+        "continent": "Africa"
     },
     {
         "country": "Zimbabwe",
@@ -1618,6 +1774,7 @@
             "Mozambique",
             "South Africa",
             "Zambia"
-        ]
+        ],
+        "continent": "Africa"
     }
 ]
