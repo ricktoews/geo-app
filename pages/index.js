@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ImageGrid from '@/components/ImageGrid';
 import ContinentSelector from '@/components/ContinentSelector';
 import { getGeoPath } from '../utils/get-path';
@@ -10,6 +10,7 @@ export default function Game(props) {
     const [poolContinents, setPoolContinents] = useState([]);
     const [origCountry, setOrigCountry] = useState('');
     const [destCountry, setDestCountry] = useState('');
+    const [challengeCountry, setChallengeCountry] = useState({});
     const [currentBorders, setCurrentBorders] = useState([]);
     const [countryPool, setCountryPool] = useState([]);
     const [filenames, setFilenames] = useState([]);
@@ -17,9 +18,7 @@ export default function Game(props) {
     const [myPath, setMyPath] = useState([]);
     const [arrived, setArrived] = useState(false);
 
-    function getCountriesByContinent(continents) {
-
-    }
+    const challengeInput = useRef(null);
 
     function selectPoolForContinents(continents) {
         console.log('====> continents', continents);
@@ -82,6 +81,14 @@ export default function Game(props) {
         }
     }, [destCountry])
 
+    useEffect(() => {
+        console.log('====> challengeCountry changed; input', challengeInput);
+        if (challengeInput.current) {
+            console.log('====> Country challenge field should be focused.');
+            challengeInput.current.focus();
+        }
+    }, [challengeCountry])
+
     function handleOriginClick(e) {
         setFilenames(currentBorders);
     }
@@ -110,12 +117,26 @@ export default function Game(props) {
         setMyPath(_path);
 
         if (countryName === destCountry) {
-            console.log('====> YOU MADE IT!!');
             setArrived(true);
         }
         const countryObj = getCountryObject(countryName);
         setOrigCountry(countryName);
         setCurrentBorders(countryObj.borders);
+        setChallengeCountry({});
+    }
+
+    function countryChallenge(countryName) {
+        const countryObj = getCountryObject(countryName);
+        setChallengeCountry(countryObj);
+    }
+
+    function handleChallenge(event) {
+        const el = event.target;
+        const value = el.value;
+        console.log('====> handleChallenge', value, challengeCountry.capital);
+        if (value === challengeCountry.capital) {
+            setNewOrigin(challengeCountry.country);
+        }
     }
 
     return !origCountry || !destCountry ? null : (
@@ -125,15 +146,16 @@ export default function Game(props) {
             {
                 poolContinents.length > 0 && (<>
                     <div className="flex justify-between">
-                        <div onClick={handleOriginClick} className="w-1/2 flex flex-col items-center justify-center">
-                            <div>Origin: {origCountry}</div>
-                            <div><img src={makeFileName(origCountry)} alt={origCountry} className="mx-auto max-h-20" /></div>
+                        <div onClick={handleOriginClick} className="relative w-1/2 flex flex-col items-center justify-center">
+                            <div id="origin-label" className="absolute bottom-0 text-center bg-gray-500 bg-opacity-50 text-white px-1 py-1">{origCountry}</div>
+                            <div><img src={makeFileName(origCountry)} alt={origCountry} className="mx-auto max-h-20 object-contain" /></div>
                         </div>
-                        <div className="w-1/2 flex flex-col items-center justify-center">
-                            <div>Destination: {destCountry}</div>
-                            <div><img src={makeFileName(destCountry)} alt={destCountry} className="mx-auto max-h-20" /></div>
+                        <div className="relative w-1/2 flex flex-col items-center justify-center">
+                            <div id="dest-label" className="absolute bottom-0 text-center bg-gray-500 bg-opacity-50 text-white px-1 py-1">{destCountry}</div>
+                            <div><img src={makeFileName(destCountry)} alt={destCountry} className="mx-auto max-h-20 object-contain" /></div>
                         </div>
                     </div>
+
                     <hr className="my-5" />
 
                     {arrived && (<div>
@@ -144,7 +166,16 @@ export default function Game(props) {
                         <div><button onClick={start}>Again!</button></div>
                     </div>)}
 
-                    {!arrived && <ImageGrid filenames={currentBorders} setNewOrigin={setNewOrigin} />}
+                    {!arrived && (<>
+                        <ImageGrid filenames={currentBorders} setNewOrigin={countryChallenge} />
+                        {challengeCountry.capital && (
+                            <div>
+                                <div>Challenge: What's the capital of {challengeCountry.country}?</div>
+                                <div><input ref={challengeInput} type="text" className="bg-gray-200 text-gray-800" onChange={handleChallenge} /></div>
+                            </div>
+
+                        )}
+                    </>)}
 
                 </>)
             }
