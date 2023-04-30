@@ -12,8 +12,12 @@ export default function Game(props) {
     const [countryPool, setCountryPool] = useState([]);
     const [filenames, setFilenames] = useState([]);
     const [geoPath, setGeoPath] = useState();
+    const [myPath, setMyPath] = useState([]);
+    const [arrived, setArrived] = useState(false);
 
-    useEffect(() => {
+    function start() {
+        setArrived(false);
+        setMyPath([]);
         const pool = countries.filter(country => country.continent === 'Europe' && country.borders.length > 0 && !country.nopath);
         setCountryPool(countries);
         setFilenames(pool.map(item => item.country));
@@ -25,6 +29,11 @@ export default function Game(props) {
         setOrigCountry(randOrigin);
         setDestCountry(randDest);
         setCurrentBorders(pool[origNdx].borders);
+
+    }
+
+    useEffect(() => {
+        start();
     }, []);
 
     useEffect(() => {
@@ -33,9 +42,12 @@ export default function Game(props) {
             console.log('====> origin borders', currentBorders);
             const result = getGeoPath(origCountry, destCountry);
             setGeoPath(result.path);
+            const _path = JSON.parse(JSON.stringify(myPath));
+            _path.push(origCountry);
+            setMyPath(_path);
             console.log('====> Path', result.path);
         }
-    }, [origCountry, destCountry])
+    }, [destCountry])
 
     function handleOriginClick(e) {
         console.log('====> current borders', currentBorders);
@@ -56,6 +68,14 @@ export default function Game(props) {
     }
 
     function setNewOrigin(countryName) {
+        const _path = JSON.parse(JSON.stringify(myPath));
+        _path.push(countryName);
+        setMyPath(_path);
+
+        if (countryName === destCountry) {
+            console.log('====> YOU MADE IT!!');
+            setArrived(true);
+        }
         const countryObj = getCountryObject(countryName);
         setOrigCountry(countryName);
         setCurrentBorders(countryObj.borders);
@@ -74,7 +94,15 @@ export default function Game(props) {
                 </div>
             </div>
             <hr className="my-5" />
-            <ImageGrid filenames={currentBorders} setNewOrigin={setNewOrigin} />
+
+            {arrived && (<div>
+                <div>YOU HAVE ARRIVED! {myPath.join(', ')}</div>
+                <div>Shortest path {geoPath.join(', ')}</div>
+                <hr className="my-5" />
+                <div><button onClick={start}>Again!</button></div>
+            </div>)}
+
+            {!arrived && <ImageGrid filenames={currentBorders} setNewOrigin={setNewOrigin} />}
         </div>
     )
 }
