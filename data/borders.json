@@ -770,7 +770,6 @@
         "country": "Israel",
         "borders": [
             "Egypt",
-            "Palestine",
             "Jordan",
             "Lebanon",
             "Syria",
@@ -1739,15 +1738,6 @@
             "Laos"
         ],
         "continent": "Asia"
-    },
-    {
-        "country": "Western Sahara",
-        "borders": [
-            "Algeria",
-            "Mauritania",
-            "Morocco"
-        ],
-        "continent": "Africa"
     },
     {
         "country": "Yemen",

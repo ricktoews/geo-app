@@ -96,8 +96,9 @@ export default function Game(props) {
             <hr className="my-5" />
 
             {arrived && (<div>
-                <div>YOU HAVE ARRIVED! {myPath.join(', ')}</div>
-                <div>Shortest path {geoPath.join(', ')}</div>
+                <div>YOU HAVE ARRIVED!</div>
+                <div>Your path: {myPath.join(', ')} (Steps: {myPath.length})</div>
+                <div>Shortest path: {geoPath.join(', ')} (Steps: {geoPath.length})</div>
                 <hr className="my-5" />
                 <div><button onClick={start}>Again!</button></div>
             </div>)}
