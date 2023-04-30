@@ -51,7 +51,7 @@ export default function Game(props) {
 
     function makeFileName(str) {
         str = str.replaceAll(' ', '-');
-        const filename = '/images/shapes/' + str.toLowerCase() + '.png';
+        const filename = '/images/flags/' + str.toLowerCase() + '.png';
         return filename;
     }
 
