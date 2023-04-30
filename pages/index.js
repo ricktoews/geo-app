@@ -60,7 +60,7 @@ export default function Game(props) {
     }
 
     useEffect(() => {
-        setPoolContinents(['europe', 'africa']);
+        setPoolContinents(['europe']);
 
     }, []);
 
@@ -120,7 +120,7 @@ export default function Game(props) {
 
     return !origCountry || !destCountry ? null : (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-8">
-            <ContinentSelector setContinentSelection={setContinentSelection} />
+            <ContinentSelector continents={poolContinents} setContinentSelection={setContinentSelection} />
 
             {
                 poolContinents.length > 0 && (<>

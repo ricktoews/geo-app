@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-export default function CheckboxGroup({ setContinentSelection }) {
+export default function CheckboxGroup({ continents, setContinentSelection }) {
     const [checked, setChecked] = useState({
         'north-america': false,
         'south-america': false,
@@ -8,6 +8,15 @@ export default function CheckboxGroup({ setContinentSelection }) {
         africa: false,
         asia: false,
     });
+
+    useEffect(() => {
+        const initContinents = {};
+        for (let continent of continents) {
+            initContinents[continent] = true;
+        }
+
+        setChecked((prevChecked) => ({ ...prevChecked, ...initContinents }));
+    }, [])
 
     const continentGroupA = ['north-america', 'south-america'];
     const continentGroupB = ['europe', 'africa', 'asia'];
