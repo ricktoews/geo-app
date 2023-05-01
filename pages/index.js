@@ -170,7 +170,7 @@ export default function Game(props) {
                         <ImageGrid filenames={currentBorders} setNewOrigin={countryChallenge} />
                         {challengeCountry.capital && (
                             <div>
-                                <div>Challenge: What's the capital of {challengeCountry.country}?</div>
+                                <div>Challenge: What&apos;s the capital of {challengeCountry.country}?</div>
                                 <div><input ref={challengeInput} type="text" className="bg-gray-200 text-gray-800" onChange={handleChallenge} /></div>
                             </div>
 
