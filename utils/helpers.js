@@ -72,3 +72,16 @@ function setOriginDirection(origin) {
 	getDirectionFromOrigin = makeDirectionFromOriginFn(origin);
 }
 exports.setOriginDirection = setOriginDirection;
+
+function normalizeString(str) {
+	str = str
+		.toLowerCase()
+		.normalize("NFD")
+		.replace(/\p{Diacritic}/gu, "")
+		.replace(/[‘’“”]/g, match => {
+			if ('‘’'.indexOf(match) !== -1) return `'`;
+			if ('“”'.indexOf(match) !== -1) return `"`;
+		});
+	return str;
+}
+exports.normalizeString = normalizeString;

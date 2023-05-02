@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import ImageGrid from '@/components/ImageGrid';
 import ContinentSelector from '@/components/ContinentSelector';
 import { getGeoPath } from '../utils/get-path';
+import { normalizeString } from '../utils/helpers';
 
 import countries from '../data/borders.json';
 
@@ -130,11 +131,22 @@ export default function Game(props) {
         setChallengeCountry(countryObj);
     }
 
+    function checkCapitalInput(input) {
+        const value = normalizeString(input);
+        const expected = normalizeString(challengeCountry.capital);
+        const capitalsList = expected.split('|');
+        let result = false;
+        for (let capital of capitalsList) {
+            if (capital === value) result = true;
+        }
+
+        return result;
+    }
+
     function handleChallenge(event) {
         const el = event.target;
-        const value = el.value;
-        console.log('====> handleChallenge', value, challengeCountry.capital);
-        if (value === challengeCountry.capital) {
+        const result = checkCapitalInput(el.value);
+        if (result) {
             setNewOrigin(challengeCountry.country);
         }
     }
@@ -147,23 +159,23 @@ export default function Game(props) {
                 poolContinents.length > 0 && (<>
                     <div className="flex justify-between">
                         <div onClick={handleOriginClick} className="relative w-1/2 flex flex-col items-center justify-center">
-                            <div id="origin-label" className="absolute bottom-0 text-center bg-gray-500 bg-opacity-50 text-white px-1 py-1">{origCountry}</div>
-                            <div><img src={makeFileName(origCountry)} alt={origCountry} className="mx-auto max-h-20 object-contain" /></div>
+                            <div><img src={makeFileName(origCountry)} alt={origCountry} className="mx-auto max-h-10 object-contain" /></div>
+                            <div id="origin-label" className="rounded-lg text-xs text-center bg-gray-300 bg-opacity-50 text-white mt-1 px-1">{origCountry}</div>
                         </div>
                         <div className="relative w-1/2 flex flex-col items-center justify-center">
-                            <div id="dest-label" className="absolute bottom-0 text-center bg-gray-500 bg-opacity-50 text-white px-1 py-1">{destCountry}</div>
-                            <div><img src={makeFileName(destCountry)} alt={destCountry} className="mx-auto max-h-20 object-contain" /></div>
+                            <div><img src={makeFileName(destCountry)} alt={destCountry} className="mx-auto max-h-10 object-contain" /></div>
+                            <div id="dest-label" className="rounded-lg text-xs text-center bg-gray-300 bg-opacity-50 text-white mt-1 px-1">{destCountry}</div>
                         </div>
                     </div>
 
-                    <hr className="my-5" />
+                    <hr className="my-2" />
 
                     {arrived && (<div>
                         <div>YOU HAVE ARRIVED!</div>
                         <div>Your path: {myPath.join(', ')} (Steps: {myPath.length})</div>
                         <div>Shortest path: {geoPath.join(', ')} (Steps: {geoPath.length})</div>
                         <hr className="my-5" />
-                        <div><button onClick={start}>Again!</button></div>
+                        <div className="flex justify-center"><button className="whitespace-normal leading-none h-5 rounded-full px-4 py-4 bg-purple-500 text-white flex items-center" onClick={start}>Again!</button></div>
                     </div>)}
 
                     {!arrived && (<>
@@ -171,7 +183,7 @@ export default function Game(props) {
                         {challengeCountry.capital && (
                             <div>
                                 <div>Challenge: What&apos;s the capital of {challengeCountry.country}?</div>
-                                <div><input ref={challengeInput} type="text" className="bg-gray-200 text-gray-800" onChange={handleChallenge} /></div>
+                                <div><input ref={challengeInput} type="text" className="bg-purple-500 text-gray-800" onChange={handleChallenge} /></div>
                             </div>
 
                         )}

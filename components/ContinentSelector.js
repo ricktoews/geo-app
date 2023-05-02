@@ -63,7 +63,7 @@ export default function CheckboxGroup({ continents, setContinentSelection }) {
 
     return (
         <div className="border border-white rounded-lg my-2">
-            <p className="text-white bg-gray-500 font-bold mb-2">Continent Selection</p>
+            <p className="text-white rounded-t-xl text-center bg-gray-400 font-bold mb-2">Continent Selection</p>
             <div className="flex justify-between px-3">
                 <div className="flex flex-col space-y-3 py-3">
                     <div className="flex space-x-3">
@@ -76,13 +76,9 @@ export default function CheckboxGroup({ continents, setContinentSelection }) {
                         <div><button onClick={handleContinentClicked} data-continent="asia" className={`h-5 rounded-full px-4 py-4 ${buttonColors.asia} text-white flex items-center`}>Asia</button></div>
                     </div>
                 </div>
-                <svg onClick={handleSetSelection} className="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                    <circle cx="15" cy="15" r="15" fill="#4CAF50" />
-                    <path d="M10.878 15.357l-2.207-2.207a1.5 1.5 0 0 1 2.121-2.121l1.086 1.086 4.293-4.293a1.5 1.5 0 0 1 2.121 2.121l-5.5 5.5a1.5 1.5 0 0 1-2.121 0z" fill="#fff" transform="translate(2 2)" />
-                </svg>
-                {/*
-                <button onClick={handleSetSelection}>Set Continent Selection</button>
-    */}
+
+                <button onClick={handleSetSelection}><img className="bg-white rounded-full h-16" src="/images/green-checkmark.png" /></button>
+
             </div>
         </div>
     );
