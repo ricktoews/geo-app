@@ -6,6 +6,8 @@ import { normalizeString } from '../utils/helpers';
 
 import countries from '../data/borders.json';
 
+const STARTING_ROUTE_POINTS = 10;
+const POINTS_PER_CHALLENGE = 3;
 
 export default function Game(props) {
     const [poolContinents, setPoolContinents] = useState([]);
@@ -17,12 +19,14 @@ export default function Game(props) {
     const [filenames, setFilenames] = useState([]);
     const [geoPath, setGeoPath] = useState();
     const [myPath, setMyPath] = useState([]);
+    const [currentShortestPath, setCurrentShortestPath] = useState([]);
     const [arrived, setArrived] = useState(false);
+    const [routePoints, setRoutePoints] = useState(0);
+    const [challengePoints, setChallengePoints] = useState(0);
 
     const challengeInput = useRef(null);
 
     function selectPoolForContinents(continents) {
-        console.log('====> continents', continents);
         const pool = countries.filter(country => {
             if (country.borders.length === 0) return false;
 
@@ -41,10 +45,13 @@ export default function Game(props) {
     }
 
     function start() {
-        console.log('====> Start, poolContinents', poolContinents);
         setArrived(false);
         setMyPath([]);
+        setCurrentShortestPath([]);
         setCountryPool(countries);
+        setRoutePoints(0);
+        setChallengePoints(0);
+        setChallengeCountry(0);
 
         const pool = selectPoolForContinents(poolContinents);
         setFilenames(pool.map(item => item.country));
@@ -65,7 +72,7 @@ export default function Game(props) {
     }, []);
 
     useEffect(() => {
-        console.log('====> set new continent selection; poolContinents:', poolContinents);
+        //        console.log('====> set new continent selection; poolContinents:', poolContinents);
         if (poolContinents.length > 0) {
             start();
         }
@@ -76,16 +83,25 @@ export default function Game(props) {
         if (origCountry.length > 0 && destCountry.length > 0) {
             const result = getGeoPath(origCountry, destCountry);
             setGeoPath(result.path);
+            setCurrentShortestPath(result.path);
             const _path = JSON.parse(JSON.stringify(myPath));
             _path.push(origCountry);
             setMyPath(_path);
+            setRoutePoints(STARTING_ROUTE_POINTS);
         }
     }, [destCountry])
 
     useEffect(() => {
-        console.log('====> challengeCountry changed; input', challengeInput);
+        if (arrived && geoPath.length < myPath.length) {
+            //            console.log('====> Looks like a mite too far', geoPath, myPath);
+            let penalty = myPath.length - geoPath.length;
+            setRoutePoints(STARTING_ROUTE_POINTS - penalty);
+        }
+    }, [arrived])
+
+    useEffect(() => {
+        //        console.log('====> challengeCountry changed; input', challengeInput);
         if (challengeInput.current) {
-            console.log('====> Country challenge field should be focused.');
             challengeInput.current.focus();
         }
     }, [challengeCountry])
@@ -116,6 +132,8 @@ export default function Game(props) {
         const _path = JSON.parse(JSON.stringify(myPath));
         _path.push(countryName);
         setMyPath(_path);
+        const newShortest = getGeoPath(countryName, destCountry);
+        setCurrentShortestPath(newShortest.path);
 
         if (countryName === destCountry) {
             setArrived(true);
@@ -147,8 +165,14 @@ export default function Game(props) {
         const el = event.target;
         const result = checkCapitalInput(el.value);
         if (result) {
+            setChallengePoints(challengePoints + POINTS_PER_CHALLENGE)
             setNewOrigin(challengeCountry.country);
         }
+    }
+
+    function handlePass(event) {
+        console.log('====> PASS ON CHALLENGE; set country to', challengeCountry.country);
+        setNewOrigin(challengeCountry.country);
     }
 
     return !origCountry || !destCountry ? null : (
@@ -167,6 +191,13 @@ export default function Game(props) {
                             <div id="dest-label" className="rounded-lg text-xs text-center bg-gray-300 bg-opacity-50 text-white mt-1 px-1">{destCountry}</div>
                         </div>
                     </div>
+                    {!arrived && (<div className="flex justify-center">
+                        <div>Shortest path: {currentShortestPath.join(', ')} (Steps: {currentShortestPath.length - 1})</div>
+                    </div>)}
+                    {arrived && (<div className="mx-5 flex flex-col items-center justify-center">
+                        <div>Route Points: {routePoints}</div>
+                        <div>Challenge Points: {challengePoints}</div>
+                    </div>)}
 
                     <hr className="my-2" />
 
@@ -181,9 +212,10 @@ export default function Game(props) {
                     {!arrived && (<>
                         <ImageGrid filenames={currentBorders} setNewOrigin={countryChallenge} />
                         {challengeCountry.capital && (
-                            <div>
+                            <div className="flex flex-col justify-center items-center">
                                 <div>Challenge: What&apos;s the capital of {challengeCountry.country}?</div>
-                                <div><input ref={challengeInput} type="text" className="bg-purple-500 text-gray-800" onChange={handleChallenge} /></div>
+                                <div className="mt-3"><input ref={challengeInput} type="text" className="bg-purple-500 text-gray-800" onChange={handleChallenge} /></div>
+                                <div className="mt-3"><button className="whitespace-normal leading-none h-5 rounded-full px-4 py-4 bg-purple-500 text-white flex items-center" onClick={handlePass}>Pass</button></div>
                             </div>
 
                         )}

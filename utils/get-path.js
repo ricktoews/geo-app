@@ -10,7 +10,7 @@ export function getGeoPath(origin, destination) {
 	paths[currentPath].push(origin);
 
 	var minPathLength = 14;
-	var SAFETY_NET = 1000000;
+	var SAFETY_NET = 2500000;
 	var safety = 0;
 	function getBorders(currentCountry) {
 		safety++;
@@ -94,4 +94,3 @@ export function getGeoPath(origin, destination) {
 
 	return shortestPath;
 }
-
