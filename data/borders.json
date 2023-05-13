@@ -166,7 +166,13 @@
             "Netherlands"
         ],
         "continent": "Europe",
-        "capital": "Brussels"
+        "capital": "Brussels",
+        "sites": [
+            {
+                "label": "Church of Notre Dame",
+                "img": "dinant-church.png"
+            }
+        ]
     },
     {
         "country": "Belize",
@@ -483,7 +489,13 @@
             "Slovakia"
         ],
         "continent": "Europe",
-        "capital": "Prague"
+        "capital": "Prague",
+        "sites": [
+            {
+                "label": "Charles Bridge",
+                "img": "prague-charles-bridge.png"
+            }
+        ]
     },
     {
         "country": "Denmark",
@@ -632,7 +644,13 @@
             "Switzerland"
         ],
         "continent": "Europe",
-        "capital": "Paris"
+        "capital": "Paris",
+        "sites": [
+            {
+                "label": "Eiffel Tower",
+                "img": "eiffel-tower.png"
+            }
+        ]
     },
     {
         "country": "Gabon",
@@ -677,7 +695,13 @@
             "Switzerland"
         ],
         "continent": "Europe",
-        "capital": "Berlin"
+        "capital": "Berlin",
+        "sites": [
+            {
+                "label": "Brandenburg Gate",
+                "img": "brandenburg-gate.png"
+            }
+        ]
     },
     {
         "country": "Ghana",
@@ -871,7 +895,17 @@
             "Vatican City"
         ],
         "continent": "Europe",
-        "capital": "Rome"
+        "capital": "Rome",
+        "sites": [
+            {
+                "label": "Colosseum",
+                "img": "rome-colosseum.png"
+            },
+            {
+                "label": "Matterhorn",
+                "img": "matterhorn.png"
+            }
+        ]
     },
     {
         "country": "Jamaica",
@@ -1067,7 +1101,13 @@
             "Germany"
         ],
         "continent": "Europe",
-        "capital": "Luxembourg"
+        "capital": "Luxembourg",
+        "sites": [
+            {
+                "label": "Casemates du Bock",
+                "img": "luxembourg-casemates.png"
+            }
+        ]
     },
     {
         "country": "Madagascar",
@@ -1431,7 +1471,13 @@
             "Spain"
         ],
         "continent": "Europe",
-        "capital": "Lisbon"
+        "capital": "Lisbon",
+        "sites": [
+            {
+                "label": "Sintra",
+                "img": "sintra.png"
+            }
+        ]
     },
     {
         "country": "Qatar",
@@ -1659,7 +1705,13 @@
             "Morocco"
         ],
         "continent": "Europe",
-        "capital": "Madrid"
+        "capital": "Madrid",
+        "sites": [
+            {
+                "label": "Sagrada Familia",
+                "img": "barcelona-sagrada-familia.png"
+            }
+        ]
     },
     {
         "country": "Sri Lanka",
@@ -1710,7 +1762,13 @@
             "Germany"
         ],
         "continent": "Europe",
-        "capital": "Bern"
+        "capital": "Bern",
+        "sites": [
+            {
+                "label": "Matterhorn",
+                "img": "matterhorn.png"
+            }
+        ]
     },
     {
         "country": "Syria",

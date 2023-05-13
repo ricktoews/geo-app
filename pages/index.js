@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import ImageGrid from '@/components/ImageGrid';
 import ContinentSelector from '@/components/ContinentSelector';
+import Sites from '@/components/Sites';
+import Popup from '@/components/Popup';
 import { getGeoPath } from '../utils/get-path';
 import { normalizeString } from '../utils/helpers';
 
@@ -10,6 +12,8 @@ const STARTING_ROUTE_POINTS = 10;
 const POINTS_PER_CHALLENGE = 3;
 
 export default function Game(props) {
+    const [popupOpen, setPopupOpen] = useState(false);
+    const [popupItem, setPopupItem] = useState({});
     const [poolContinents, setPoolContinents] = useState([]);
     const [origCountry, setOrigCountry] = useState('');
     const [destCountry, setDestCountry] = useState('');
@@ -107,7 +111,7 @@ export default function Game(props) {
     }, [challengeCountry])
 
     function handleOriginClick(e) {
-        setFilenames(currentBorders);
+        //setFilenames(currentBorders);
     }
 
     function getCountryObject(country) {
@@ -175,23 +179,34 @@ export default function Game(props) {
         setNewOrigin(challengeCountry.country);
     }
 
+    function handleItemClick(event) {
+        const el = event.currentTarget;
+        const { label, type } = el.dataset;
+        const src = el.src;
+        console.log('====> handleItemClick', el.dataset);
+        setPopupOpen(true);
+        setPopupItem({ selected: true, name: label, src });
+    }
+
     return !origCountry || !destCountry ? null : (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-8">
-            <ContinentSelector continents={poolContinents} setContinentSelection={setContinentSelection} />
+            <Popup active={popupOpen} handleItemClick={handleItemClick} setPopupOpen={setPopupOpen} popupItem={popupItem} />
+            <div className="h-10">Countries of: {poolContinents}</div>
+            {false && <ContinentSelector continents={poolContinents} setContinentSelection={setContinentSelection} />}
 
             {
                 poolContinents.length > 0 && (<>
                     <div className="flex justify-between">
-                        <div onClick={handleOriginClick} className="relative w-1/2 flex flex-col items-center justify-center">
+                        <div onClick={handleItemClick} data-type="country" data-label={origCountry} className="relative w-1/2 flex flex-col items-center justify-center">
                             <div><img src={makeFileName(origCountry)} alt={origCountry} className="mx-auto max-h-10 object-contain" /></div>
                             <div id="origin-label" className="rounded-lg text-xs text-center bg-gray-300 bg-opacity-50 text-white mt-1 px-1">{origCountry}</div>
                         </div>
-                        <div className="relative w-1/2 flex flex-col items-center justify-center">
+                        <div onClick={handleItemClick} data-type="country" data-label={destCountry} className="relative w-1/2 flex flex-col items-center justify-center">
                             <div><img src={makeFileName(destCountry)} alt={destCountry} className="mx-auto max-h-10 object-contain" /></div>
                             <div id="dest-label" className="rounded-lg text-xs text-center bg-gray-300 bg-opacity-50 text-white mt-1 px-1">{destCountry}</div>
                         </div>
                     </div>
-                    {!arrived && (<div className="flex justify-center">
+                    {false && !arrived && (<div className="flex justify-center">
                         <div>Shortest path: {currentShortestPath.join(', ')} (Steps: {currentShortestPath.length - 1})</div>
                     </div>)}
                     {arrived && (<div className="mx-5 flex flex-col items-center justify-center">
@@ -200,7 +215,8 @@ export default function Game(props) {
                     </div>)}
 
                     <hr className="my-2" />
-
+                    <Sites handleItemClick={handleItemClick} />
+                    <hr className="my-2" />
                     {arrived && (<div>
                         <div>YOU HAVE ARRIVED!</div>
                         <div>Your path: {myPath.join(', ')} (Steps: {myPath.length})</div>
@@ -214,7 +230,7 @@ export default function Game(props) {
                         {challengeCountry.capital && (
                             <div className="flex flex-col justify-center items-center">
                                 <div>Challenge: What&apos;s the capital of {challengeCountry.country}?</div>
-                                <div className="mt-3"><input ref={challengeInput} type="text" className="bg-purple-500 text-gray-800" onChange={handleChallenge} /></div>
+                                <div className="mt-3"><input ref={challengeInput} type="text" className="outline-none bg-purple-500 text-gray-800" onChange={handleChallenge} /></div>
                                 <div className="mt-3"><button className="whitespace-normal leading-none h-5 rounded-full px-4 py-4 bg-purple-500 text-white flex items-center" onClick={handlePass}>Pass</button></div>
                             </div>
 

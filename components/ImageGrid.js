@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const ImageGrid = ({ filenames, setNewOrigin }) => {
 
     function handleClick(e) {
