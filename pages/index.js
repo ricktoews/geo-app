@@ -5,11 +5,14 @@ import Sites from '@/components/Sites';
 import Popup from '@/components/Popup';
 import { getGeoPath } from '../utils/get-path';
 import { normalizeString } from '../utils/helpers';
+import { useLoadScript, GoogleMap } from '@react-google-maps/api';
+import { getMappingData } from '../utils/map-helpers';
 
 import countries from '../data/borders.json';
 
 const STARTING_ROUTE_POINTS = 10;
 const POINTS_PER_CHALLENGE = 3;
+const ZOOM = 5;
 
 export default function Game(props) {
     const [popupOpen, setPopupOpen] = useState(false);
@@ -17,6 +20,7 @@ export default function Game(props) {
     const [poolContinents, setPoolContinents] = useState([]);
     const [origCountry, setOrigCountry] = useState('');
     const [destCountry, setDestCountry] = useState('');
+    const [mappingData, setMappingData] = useState({});
     const [challengeCountry, setChallengeCountry] = useState({});
     const [currentBorders, setCurrentBorders] = useState([]);
     const [countryPool, setCountryPool] = useState([]);
@@ -27,8 +31,16 @@ export default function Game(props) {
     const [arrived, setArrived] = useState(false);
     const [routePoints, setRoutePoints] = useState(0);
     const [challengePoints, setChallengePoints] = useState(0);
-
     const challengeInput = useRef(null);
+    const [coords, setCoords] = useState({
+        "lat": 33.8869,
+        "lng": 9.5375
+    });
+
+    const { isLoaded } = useLoadScript({
+        googleMapsApiKey: process.env.REACT_APP_API_KEY,
+    });
+
 
     function selectPoolForContinents(continents) {
         const pool = countries.filter(country => {
@@ -65,13 +77,14 @@ export default function Game(props) {
         const randOrigin = pool[origNdx].country;
         const randDest = pool[destNdx].country;
         setOrigCountry(randOrigin);
+        setCoords(pool[origNdx].center);
         setDestCountry(randDest);
         setCurrentBorders(pool[origNdx].borders);
 
     }
 
     useEffect(() => {
-        setPoolContinents(['europe']);
+        setPoolContinents(['asia']);
 
     }, []);
 
@@ -133,6 +146,7 @@ export default function Game(props) {
     }
 
     function setNewOrigin(countryName) {
+        const _mappingData = getMappingData(countryName, countries);
         const _path = JSON.parse(JSON.stringify(myPath));
         _path.push(countryName);
         setMyPath(_path);
@@ -143,6 +157,8 @@ export default function Game(props) {
             setArrived(true);
         }
         const countryObj = getCountryObject(countryName);
+        setMappingData(_mappingData);
+        setCoords(_mappingData.center);
         setOrigCountry(countryName);
         setCurrentBorders(countryObj.borders);
         setChallengeCountry({});
@@ -179,13 +195,17 @@ export default function Game(props) {
         setNewOrigin(challengeCountry.country);
     }
 
+    function handleCountryClick(event) {
+        const el = event.currentTarget;
+    }
+
     function handleItemClick(event) {
         const el = event.currentTarget;
         const { label, type } = el.dataset;
         const src = el.src;
         console.log('====> handleItemClick', el.dataset);
         setPopupOpen(true);
-        setPopupItem({ selected: true, name: label, src });
+        setPopupItem({ selected: true, name: label, src, mappingData });
     }
 
     return !origCountry || !destCountry ? null : (
@@ -197,11 +217,11 @@ export default function Game(props) {
             {
                 poolContinents.length > 0 && (<>
                     <div className="flex justify-between">
-                        <div onClick={handleItemClick} data-type="country" data-label={origCountry} className="relative w-1/2 flex flex-col items-center justify-center">
+                        <div onClick={handleCountryClick} className="relative w-1/2 flex flex-col items-center justify-center">
                             <div><img src={makeFileName(origCountry)} alt={origCountry} className="mx-auto max-h-10 object-contain" /></div>
                             <div id="origin-label" className="rounded-lg text-xs text-center bg-gray-300 bg-opacity-50 text-white mt-1 px-1">{origCountry}</div>
                         </div>
-                        <div onClick={handleItemClick} data-type="country" data-label={destCountry} className="relative w-1/2 flex flex-col items-center justify-center">
+                        <div onClick={handleCountryClick} className="relative w-1/2 flex flex-col items-center justify-center">
                             <div><img src={makeFileName(destCountry)} alt={destCountry} className="mx-auto max-h-10 object-contain" /></div>
                             <div id="dest-label" className="rounded-lg text-xs text-center bg-gray-300 bg-opacity-50 text-white mt-1 px-1">{destCountry}</div>
                         </div>
@@ -239,6 +259,9 @@ export default function Game(props) {
 
                 </>)
             }
+            {isLoaded ? <div className="bottom-5 fixed left-1/2 transform -translate-x-1/2">
+                <GoogleMap options={{ disableDefaultUI: true }} zoom={ZOOM} center={coords} mapContainerClassName="map-container" />
+            </div> : <div>Not loaded</div>}
         </div>
     )
 }

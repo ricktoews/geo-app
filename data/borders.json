@@ -10,7 +10,12 @@
             "Uzbekistan"
         ],
         "continent": "Asia",
-        "capital": "Kabul"
+        "capital": "Kabul",
+        "iso3166": "AF",
+        "center": {
+            "lat": 33.9391,
+            "lng": 67.71
+        }
     },
     {
         "country": "Albania",
@@ -21,7 +26,12 @@
             "Montenegro"
         ],
         "continent": "Europe",
-        "capital": "Tirana"
+        "capital": "Tirana",
+        "iso3166": "AL",
+        "center": {
+            "lat": 41.1533,
+            "lng": 20.1683
+        }
     },
     {
         "country": "Algeria",
@@ -34,7 +44,12 @@
             "Tunisia"
         ],
         "continent": "Africa",
-        "capital": "Algiers"
+        "capital": "Algiers",
+        "iso3166": "DZ",
+        "center": {
+            "lat": 28.033886,
+            "lng": 1.659626
+        }
     },
     {
         "country": "Andorra",
@@ -43,7 +58,12 @@
             "Spain"
         ],
         "continent": "Europe",
-        "capital": "Andorra la Vella"
+        "capital": "Andorra la Vella",
+        "iso3166": "AD",
+        "center": {
+            "lat": 42.5063,
+            "lng": 1.5218
+        }
     },
     {
         "country": "Angola",
@@ -54,13 +74,23 @@
             "Zambia"
         ],
         "continent": "Africa",
-        "capital": "Luanda"
+        "capital": "Luanda",
+        "iso3166": "AO",
+        "center": {
+            "lat": -11.202692,
+            "lng": 17.873887
+        }
     },
     {
         "country": "Antigua and Barbuda",
         "borders": [],
         "continent": "North America",
-        "capital": "Saint John's"
+        "capital": "Saint John's",
+        "iso3166": "AG",
+        "center": {
+            "lat": 17.0608,
+            "lng": -61.7964
+        }
     },
     {
         "country": "Argentina",
@@ -72,7 +102,12 @@
             "Uruguay"
         ],
         "continent": "South America",
-        "capital": "Buenos Aires"
+        "capital": "Buenos Aires",
+        "iso3166": "AR",
+        "center": {
+            "lat": -38.4161,
+            "lng": -63.6167
+        }
     },
     {
         "country": "Armenia",
@@ -83,7 +118,12 @@
             "Turkey"
         ],
         "continent": "Asia",
-        "capital": "Yerevan"
+        "capital": "Yerevan",
+        "iso3166": "AM",
+        "center": {
+            "lat": 40.0691,
+            "lng": 45.0382
+        }
     },
     {
         "country": "Australia",
@@ -104,7 +144,12 @@
             "Switzerland"
         ],
         "continent": "Europe",
-        "capital": "Vienna"
+        "capital": "Vienna",
+        "iso3166": "AT",
+        "center": {
+            "lat": 47.5162,
+            "lng": 14.5501
+        }
     },
     {
         "country": "Azerbaijan",
@@ -116,19 +161,34 @@
             "Turkey"
         ],
         "continent": "Asia",
-        "capital": "Baku"
+        "capital": "Baku",
+        "iso3166": "AZ",
+        "center": {
+            "lat": 40.1431,
+            "lng": 47.5769
+        }
     },
     {
         "country": "Bahamas",
         "borders": [],
         "continent": "North America",
-        "capital": "Nassau"
+        "capital": "Nassau",
+        "iso3166": "BS",
+        "center": {
+            "lat": 25.0343,
+            "lng": -77.3963
+        }
     },
     {
         "country": "Bahrain",
         "borders": [],
         "continent": "Asia",
-        "capital": "Manama"
+        "capital": "Manama",
+        "iso3166": "BH",
+        "center": {
+            "lat": 26.1921,
+            "lng": 50.5354
+        }
     },
     {
         "country": "Bangladesh",
@@ -137,13 +197,23 @@
             "Myanmar"
         ],
         "continent": "Asia",
-        "capital": "Dhaka"
+        "capital": "Dhaka",
+        "iso3166": "BD",
+        "center": {
+            "lat": 23.685,
+            "lng": 90.3563
+        }
     },
     {
         "country": "Barbados",
         "borders": [],
         "continent": "North America",
-        "capital": "Bridgetown"
+        "capital": "Bridgetown",
+        "iso3166": "BB",
+        "center": {
+            "lat": 13.1939,
+            "lng": -59.5432
+        }
     },
     {
         "country": "Belarus",
@@ -155,7 +225,12 @@
             "Ukraine"
         ],
         "continent": "Europe",
-        "capital": "Minsk"
+        "capital": "Minsk",
+        "iso3166": "BY",
+        "center": {
+            "lat": 53.7098,
+            "lng": 27.9534
+        }
     },
     {
         "country": "Belgium",
@@ -172,7 +247,12 @@
                 "label": "Church of Notre Dame",
                 "img": "dinant-church.png"
             }
-        ]
+        ],
+        "iso3166": "BE",
+        "center": {
+            "lat": 50.5039,
+            "lng": 4.4699
+        }
     },
     {
         "country": "Belize",
@@ -181,7 +261,12 @@
             "Mexico"
         ],
         "continent": "North America",
-        "capital": "Belmopan"
+        "capital": "Belmopan",
+        "iso3166": "BZ",
+        "center": {
+            "lat": 17.1899,
+            "lng": -88.4976
+        }
     },
     {
         "country": "Benin",
@@ -192,7 +277,12 @@
             "Togo"
         ],
         "continent": "Africa",
-        "capital": "Porto-Novo"
+        "capital": "Porto-Novo",
+        "iso3166": "BJ",
+        "center": {
+            "lat": 9.30769,
+            "lng": 2.315834
+        }
     },
     {
         "country": "Bhutan",
@@ -201,7 +291,12 @@
             "India"
         ],
         "continent": "Asia",
-        "capital": "Thimphu"
+        "capital": "Thimphu",
+        "iso3166": "BT",
+        "center": {
+            "lat": 27.5142,
+            "lng": 90.4336
+        }
     },
     {
         "country": "Bolivia",
@@ -213,7 +308,12 @@
             "Peru"
         ],
         "continent": "South America",
-        "capital": "Sucre"
+        "capital": "Sucre",
+        "iso3166": "BO",
+        "center": {
+            "lat": -16.2902,
+            "lng": -63.5887
+        }
     },
     {
         "country": "Bosnia and Herzegovina",
@@ -223,7 +323,12 @@
             "Serbia"
         ],
         "continent": "Europe",
-        "capital": "Sarajevo"
+        "capital": "Sarajevo",
+        "iso3166": "BA",
+        "center": {
+            "lat": 43.9159,
+            "lng": 17.6791
+        }
     },
     {
         "country": "Botswana",
@@ -234,7 +339,12 @@
             "Zimbabwe"
         ],
         "continent": "Africa",
-        "capital": "Gaborone"
+        "capital": "Gaborone",
+        "iso3166": "BW",
+        "center": {
+            "lat": -22.328474,
+            "lng": 24.684866
+        }
     },
     {
         "country": "Brazil",
@@ -251,7 +361,12 @@
             "Venezuela"
         ],
         "continent": "South America",
-        "capital": "Brasília"
+        "capital": "Brasília",
+        "iso3166": "BR",
+        "center": {
+            "lat": -14.235,
+            "lng": -51.9253
+        }
     },
     {
         "country": "Brunei",
@@ -259,7 +374,12 @@
             "Malaysia"
         ],
         "continent": "Asia",
-        "capital": "Bandar Seri Begawan"
+        "capital": "Bandar Seri Begawan",
+        "iso3166": "BN",
+        "center": {
+            "lat": 4.5353,
+            "lng": 114.7277
+        }
     },
     {
         "country": "Bulgaria",
@@ -271,7 +391,12 @@
             "Turkey"
         ],
         "continent": "Europe",
-        "capital": "Sofia"
+        "capital": "Sofia",
+        "iso3166": "BG",
+        "center": {
+            "lat": 42.7339,
+            "lng": 25.4858
+        }
     },
     {
         "country": "Burkina Faso",
@@ -284,7 +409,12 @@
             "Togo"
         ],
         "continent": "Africa",
-        "capital": "Ouagadougou"
+        "capital": "Ouagadougou",
+        "iso3166": "BF",
+        "center": {
+            "lat": 12.238333,
+            "lng": -1.561593
+        }
     },
     {
         "country": "Burundi",
@@ -294,7 +424,12 @@
             "Tanzania"
         ],
         "continent": "Africa",
-        "capital": "Gitega"
+        "capital": "Gitega",
+        "iso3166": "BI",
+        "center": {
+            "lat": -3.373056,
+            "lng": 29.918886
+        }
     },
     {
         "country": "Cambodia",
@@ -304,7 +439,12 @@
             "Vietnam"
         ],
         "continent": "Asia",
-        "capital": "Phnom Penh"
+        "capital": "Phnom Penh",
+        "iso3166": "KH",
+        "center": {
+            "lat": 12.5657,
+            "lng": 104.991
+        }
     },
     {
         "country": "Cameroon",
@@ -317,7 +457,12 @@
             "Nigeria"
         ],
         "continent": "Africa",
-        "capital": "Yaoundé"
+        "capital": "Yaoundé",
+        "iso3166": "CM",
+        "center": {
+            "lat": 7.369722,
+            "lng": 12.354722
+        }
     },
     {
         "country": "Canada",
@@ -325,13 +470,23 @@
             "United States"
         ],
         "continent": "North America",
-        "capital": "Ottawa"
+        "capital": "Ottawa",
+        "iso3166": "CA",
+        "center": {
+            "lat": 56.1304,
+            "lng": -106.3468
+        }
     },
     {
         "country": "Cape Verde",
         "borders": [],
         "continent": "Africa",
-        "capital": "Praia"
+        "capital": "Praia",
+        "iso3166": "CV",
+        "center": {
+            "lat": 16.002082,
+            "lng": -24.013197
+        }
     },
     {
         "country": "Central African Republic",
@@ -344,7 +499,12 @@
             "Sudan"
         ],
         "continent": "Africa",
-        "capital": "Bangui"
+        "capital": "Bangui",
+        "iso3166": "CF",
+        "center": {
+            "lat": 6.611111,
+            "lng": 20.939444
+        }
     },
     {
         "country": "Chad",
@@ -357,7 +517,12 @@
             "Sudan"
         ],
         "continent": "Africa",
-        "capital": "N'Djamena"
+        "capital": "N'Djamena",
+        "iso3166": "TD",
+        "center": {
+            "lat": 15.454166,
+            "lng": 18.732207
+        }
     },
     {
         "country": "Chile",
@@ -367,7 +532,12 @@
             "Peru"
         ],
         "continent": "South America",
-        "capital": "Santiago"
+        "capital": "Santiago",
+        "iso3166": "CL",
+        "center": {
+            "lat": -35.6751,
+            "lng": -71.543
+        }
     },
     {
         "country": "China",
@@ -387,7 +557,12 @@
             "Vietnam"
         ],
         "continent": "Asia",
-        "capital": "Beijing"
+        "capital": "Beijing",
+        "iso3166": "CN",
+        "center": {
+            "lat": 35.8617,
+            "lng": 104.1954
+        }
     },
     {
         "country": "Colombia",
@@ -399,13 +574,23 @@
             "Venezuela"
         ],
         "continent": "South America",
-        "capital": "Bogotá"
+        "capital": "Bogotá",
+        "iso3166": "CO",
+        "center": {
+            "lat": 4.5709,
+            "lng": -74.2973
+        }
     },
     {
         "country": "Comoros",
         "borders": [],
         "continent": "Africa",
-        "capital": "Moroni"
+        "capital": "Moroni",
+        "iso3166": "KM",
+        "center": {
+            "lat": -11.6455,
+            "lng": 43.3333
+        }
     },
     {
         "country": "Democratic Republic of the Congo",
@@ -421,7 +606,12 @@
             "Zambia"
         ],
         "continent": "Africa",
-        "capital": "Kinshasa"
+        "capital": "Kinshasa",
+        "iso3166": "CD",
+        "center": {
+            "lat": -4.038333,
+            "lng": 21.758664
+        }
     },
     {
         "country": "Republic of the Congo",
@@ -433,7 +623,12 @@
             "Gabon"
         ],
         "continent": "Africa",
-        "capital": "Brazzaville"
+        "capital": "Brazzaville",
+        "iso3166": "CG",
+        "center": {
+            "lat": -0.228021,
+            "lng": 15.827659
+        }
     },
     {
         "country": "Costa Rica",
@@ -442,7 +637,12 @@
             "Panama"
         ],
         "continent": "North America",
-        "capital": "San José"
+        "capital": "San José",
+        "iso3166": "CR",
+        "center": {
+            "lat": 9.7489,
+            "lng": -83.7534
+        }
     },
     {
         "country": "Ivory Coast",
@@ -454,7 +654,12 @@
             "Mali"
         ],
         "continent": "Africa",
-        "capital": "Yamoussoukro"
+        "capital": "Yamoussoukro",
+        "iso3166": "CI",
+        "center": {
+            "lat": 7.539989,
+            "lng": -5.54708
+        }
     },
     {
         "country": "Croatia",
@@ -466,19 +671,34 @@
             "Slovenia"
         ],
         "continent": "Europe",
-        "capital": "Zagreb"
+        "capital": "Zagreb",
+        "iso3166": "HR",
+        "center": {
+            "lat": 45.1,
+            "lng": 15.2
+        }
     },
     {
         "country": "Cuba",
         "borders": [],
         "continent": "North America",
-        "capital": "Havana"
+        "capital": "Havana",
+        "iso3166": "CU",
+        "center": {
+            "lat": 21.5218,
+            "lng": -77.7812
+        }
     },
     {
         "country": "Cyprus",
         "borders": [],
         "continent": "Europe",
-        "capital": "Nicosia"
+        "capital": "Nicosia",
+        "iso3166": "CY",
+        "center": {
+            "lat": 35.1264,
+            "lng": 33.4299
+        }
     },
     {
         "country": "Czechia",
@@ -495,7 +715,12 @@
                 "label": "Charles Bridge",
                 "img": "prague-charles-bridge.png"
             }
-        ]
+        ],
+        "iso3166": "CZ",
+        "center": {
+            "lat": 49.8175,
+            "lng": 15.472
+        }
     },
     {
         "country": "Denmark",
@@ -503,7 +728,12 @@
             "Germany"
         ],
         "continent": "Europe",
-        "capital": "Copenhagen"
+        "capital": "Copenhagen",
+        "iso3166": "DK",
+        "center": {
+            "lat": 56.2639,
+            "lng": 9.5018
+        }
     },
     {
         "country": "Djibouti",
@@ -512,13 +742,23 @@
             "Ethiopia"
         ],
         "continent": "Africa",
-        "capital": "Djibouti"
+        "capital": "Djibouti",
+        "iso3166": "DJ",
+        "center": {
+            "lat": 11.825138,
+            "lng": 42.590275
+        }
     },
     {
         "country": "Dominica",
         "borders": [],
         "continent": "North America",
-        "capital": "Roseau"
+        "capital": "Roseau",
+        "iso3166": "DM",
+        "center": {
+            "lat": 15.415,
+            "lng": -61.371
+        }
     },
     {
         "country": "Dominican Republic",
@@ -527,7 +767,12 @@
         ],
         "continent": "North America",
         "nopath": true,
-        "capital": "Santo Domingo"
+        "capital": "Santo Domingo",
+        "iso3166": "DO",
+        "center": {
+            "lat": 18.7357,
+            "lng": -70.1627
+        }
     },
     {
         "country": "East Timor",
@@ -535,7 +780,12 @@
             "Indonesia"
         ],
         "continent": "Asia",
-        "capital": "Dili"
+        "capital": "Dili",
+        "iso3166": "TL",
+        "center": {
+            "lat": -8.8742,
+            "lng": 125.7275
+        }
     },
     {
         "country": "Ecuador",
@@ -544,7 +794,12 @@
             "Peru"
         ],
         "continent": "South America",
-        "capital": "Quito"
+        "capital": "Quito",
+        "iso3166": "EC",
+        "center": {
+            "lat": -1.8312,
+            "lng": -78.1834
+        }
     },
     {
         "country": "Egypt",
@@ -554,7 +809,12 @@
             "Sudan"
         ],
         "continent": "Africa",
-        "capital": "Cairo"
+        "capital": "Cairo",
+        "iso3166": "EG",
+        "center": {
+            "lat": 26.820553,
+            "lng": 30.802498
+        }
     },
     {
         "country": "El Salvador",
@@ -563,7 +823,12 @@
             "Honduras"
         ],
         "continent": "North America",
-        "capital": "San Salvador"
+        "capital": "San Salvador",
+        "iso3166": "SV",
+        "center": {
+            "lat": 13.7942,
+            "lng": -88.8965
+        }
     },
     {
         "country": "Equatorial Guinea",
@@ -572,7 +837,12 @@
             "Gabon"
         ],
         "continent": "Africa",
-        "capital": "Malabo"
+        "capital": "Malabo",
+        "iso3166": "GQ",
+        "center": {
+            "lat": 1.650801,
+            "lng": 10.267895
+        }
     },
     {
         "country": "Eritrea",
@@ -582,7 +852,12 @@
             "Sudan"
         ],
         "continent": "Africa",
-        "capital": "Asmara"
+        "capital": "Asmara",
+        "iso3166": "ER",
+        "center": {
+            "lat": 15.179384,
+            "lng": 39.782334
+        }
     },
     {
         "country": "Estonia",
@@ -591,7 +866,12 @@
             "Russia"
         ],
         "continent": "Europe",
-        "capital": "Tallinn"
+        "capital": "Tallinn",
+        "iso3166": "EE",
+        "center": {
+            "lat": 58.5953,
+            "lng": 25.0136
+        }
     },
     {
         "country": "Eswatini",
@@ -600,7 +880,12 @@
             "South Africa"
         ],
         "continent": "Africa",
-        "capital": "Mbabane"
+        "capital": "Mbabane",
+        "iso3166": "SZ",
+        "center": {
+            "lat": -26.522503,
+            "lng": 31.465866
+        }
     },
     {
         "country": "Ethiopia",
@@ -613,7 +898,12 @@
             "Sudan"
         ],
         "continent": "Africa",
-        "capital": "Addis Ababa"
+        "capital": "Addis Ababa",
+        "iso3166": "ET",
+        "center": {
+            "lat": 9.145,
+            "lng": 40.489673
+        }
     },
     {
         "country": "Fiji",
@@ -629,7 +919,12 @@
             "Russia"
         ],
         "continent": "Europe",
-        "capital": "Helsinki"
+        "capital": "Helsinki",
+        "iso3166": "FI",
+        "center": {
+            "lat": 61.9241,
+            "lng": 25.7482
+        }
     },
     {
         "country": "France",
@@ -650,7 +945,12 @@
                 "label": "Eiffel Tower",
                 "img": "eiffel-tower.png"
             }
-        ]
+        ],
+        "iso3166": "FR",
+        "center": {
+            "lat": 46.2276,
+            "lng": 2.2137
+        }
     },
     {
         "country": "Gabon",
@@ -660,7 +960,12 @@
             "Equatorial Guinea"
         ],
         "continent": "Africa",
-        "capital": "Libreville"
+        "capital": "Libreville",
+        "iso3166": "GA",
+        "center": {
+            "lat": -0.803689,
+            "lng": 11.609444
+        }
     },
     {
         "country": "The Gambia",
@@ -668,7 +973,12 @@
             "Senegal"
         ],
         "continent": "Africa",
-        "capital": "Banjul"
+        "capital": "Banjul",
+        "iso3166": "GM",
+        "center": {
+            "lat": 13.443182,
+            "lng": -15.310139
+        }
     },
     {
         "country": "Georgia",
@@ -679,7 +989,12 @@
             "Turkey"
         ],
         "continent": "Asia",
-        "capital": "Tbilisi"
+        "capital": "Tbilisi",
+        "iso3166": "GE",
+        "center": {
+            "lat": 42.3154,
+            "lng": 43.3569
+        }
     },
     {
         "country": "Germany",
@@ -701,7 +1016,12 @@
                 "label": "Brandenburg Gate",
                 "img": "brandenburg-gate.png"
             }
-        ]
+        ],
+        "iso3166": "DE",
+        "center": {
+            "lat": 51.1657,
+            "lng": 10.4515
+        }
     },
     {
         "country": "Ghana",
@@ -711,7 +1031,12 @@
             "Togo"
         ],
         "continent": "Africa",
-        "capital": "Accra"
+        "capital": "Accra",
+        "iso3166": "GH",
+        "center": {
+            "lat": 7.946527,
+            "lng": -1.023194
+        }
     },
     {
         "country": "Greece",
@@ -722,13 +1047,23 @@
             "North Macedonia"
         ],
         "continent": "Europe",
-        "capital": "Athens"
+        "capital": "Athens",
+        "iso3166": "GR",
+        "center": {
+            "lat": 39.0742,
+            "lng": 21.8243
+        }
     },
     {
         "country": "Grenada",
         "borders": [],
         "continent": "North America",
-        "capital": "St. George's"
+        "capital": "St. George's",
+        "iso3166": "GD",
+        "center": {
+            "lat": 12.1165,
+            "lng": -61.6789
+        }
     },
     {
         "country": "Guatemala",
@@ -739,7 +1074,12 @@
             "Mexico"
         ],
         "continent": "North America",
-        "capital": "Guatemala City"
+        "capital": "Guatemala City",
+        "iso3166": "GT",
+        "center": {
+            "lat": 15.7835,
+            "lng": -90.2308
+        }
     },
     {
         "country": "Guinea",
@@ -752,7 +1092,12 @@
             "Sierra Leone"
         ],
         "continent": "Africa",
-        "capital": "Conakry"
+        "capital": "Conakry",
+        "iso3166": "GN",
+        "center": {
+            "lat": 9.945587,
+            "lng": -9.696645
+        }
     },
     {
         "country": "Guinea-Bissau",
@@ -761,7 +1106,12 @@
             "Senegal"
         ],
         "continent": "Africa",
-        "capital": "Bissau"
+        "capital": "Bissau",
+        "iso3166": "GW",
+        "center": {
+            "lat": 11.803749,
+            "lng": -15.180413
+        }
     },
     {
         "country": "Guyana",
@@ -771,7 +1121,12 @@
             "Venezuela"
         ],
         "continent": "South America",
-        "capital": "Georgetown"
+        "capital": "Georgetown",
+        "iso3166": "GY",
+        "center": {
+            "lat": 4.8604,
+            "lng": -58.9302
+        }
     },
     {
         "country": "Haiti",
@@ -780,7 +1135,12 @@
         ],
         "continent": "North America",
         "nopath": true,
-        "capital": "Port-au-Prince"
+        "capital": "Port-au-Prince",
+        "iso3166": "HT",
+        "center": {
+            "lat": 18.9712,
+            "lng": -72.2852
+        }
     },
     {
         "country": "Honduras",
@@ -790,7 +1150,12 @@
             "Nicaragua"
         ],
         "continent": "North America",
-        "capital": "Tegucigalpa"
+        "capital": "Tegucigalpa",
+        "iso3166": "HN",
+        "center": {
+            "lat": 15.2,
+            "lng": -86.2419
+        }
     },
     {
         "country": "Hungary",
@@ -804,13 +1169,23 @@
             "Ukraine"
         ],
         "continent": "Europe",
-        "capital": "Budapest"
+        "capital": "Budapest",
+        "iso3166": "HU",
+        "center": {
+            "lat": 47.1625,
+            "lng": 19.5033
+        }
     },
     {
         "country": "Iceland",
         "borders": [],
         "continent": "Europe",
-        "capital": "Reykjavik"
+        "capital": "Reykjavik",
+        "iso3166": "IS",
+        "center": {
+            "lat": 64.9631,
+            "lng": -19.0208
+        }
     },
     {
         "country": "India",
@@ -824,7 +1199,12 @@
             "Pakistan"
         ],
         "continent": "Asia",
-        "capital": "New Delhi"
+        "capital": "New Delhi",
+        "iso3166": "IN",
+        "center": {
+            "lat": 20.5937,
+            "lng": 78.9629
+        }
     },
     {
         "country": "Indonesia",
@@ -834,7 +1214,12 @@
             "Papua New Guinea"
         ],
         "continent": "Asia",
-        "capital": "Jakarta"
+        "capital": "Jakarta",
+        "iso3166": "ID",
+        "center": {
+            "lat": -0.7893,
+            "lng": 113.9213
+        }
     },
     {
         "country": "Iran",
@@ -848,7 +1233,12 @@
             "Turkmenistan"
         ],
         "continent": "Asia",
-        "capital": "Tehran"
+        "capital": "Tehran",
+        "iso3166": "IR",
+        "center": {
+            "lat": 32.4279,
+            "lng": 53.688
+        }
     },
     {
         "country": "Iraq",
@@ -861,7 +1251,12 @@
             "Turkey"
         ],
         "continent": "Asia",
-        "capital": "Baghdad"
+        "capital": "Baghdad",
+        "iso3166": "IQ",
+        "center": {
+            "lat": 33.2232,
+            "lng": 43.6793
+        }
     },
     {
         "country": "Ireland",
@@ -870,7 +1265,12 @@
         ],
         "continent": "Europe",
         "nopath": true,
-        "capital": "Dublin"
+        "capital": "Dublin",
+        "iso3166": "IE",
+        "center": {
+            "lat": 53.1424,
+            "lng": -7.6921
+        }
     },
     {
         "country": "Israel",
@@ -882,7 +1282,12 @@
             "Palestine"
         ],
         "continent": "Asia",
-        "capital": "Jerusalem"
+        "capital": "Jerusalem",
+        "iso3166": "IL",
+        "center": {
+            "lat": 31.0461,
+            "lng": 34.8516
+        }
     },
     {
         "country": "Italy",
@@ -905,19 +1310,34 @@
                 "label": "Matterhorn",
                 "img": "matterhorn.png"
             }
-        ]
+        ],
+        "iso3166": "IT",
+        "center": {
+            "lat": 41.8719,
+            "lng": 12.5674
+        }
     },
     {
         "country": "Jamaica",
         "borders": [],
         "continent": "North America",
-        "capital": "Kingston"
+        "capital": "Kingston",
+        "iso3166": "JM",
+        "center": {
+            "lat": 18.1096,
+            "lng": -77.2975
+        }
     },
     {
         "country": "Japan",
         "borders": [],
         "continent": "Asia",
-        "capital": "Tokyo"
+        "capital": "Tokyo",
+        "iso3166": "JP",
+        "center": {
+            "lat": 36.2048,
+            "lng": 138.2529
+        }
     },
     {
         "country": "Jordan",
@@ -929,7 +1349,12 @@
             "Palestine"
         ],
         "continent": "Asia",
-        "capital": "Amman"
+        "capital": "Amman",
+        "iso3166": "JO",
+        "center": {
+            "lat": 30.5852,
+            "lng": 36.2384
+        }
     },
     {
         "country": "Kazakhstan",
@@ -941,7 +1366,12 @@
             "Uzbekistan"
         ],
         "continent": "Asia",
-        "capital": "Nur-Sultan"
+        "capital": "Nur-Sultan",
+        "iso3166": "KZ",
+        "center": {
+            "lat": 48.0196,
+            "lng": 66.9237
+        }
     },
     {
         "country": "Kenya",
@@ -953,7 +1383,12 @@
             "Uganda"
         ],
         "continent": "Africa",
-        "capital": "Nairobi"
+        "capital": "Nairobi",
+        "iso3166": "KE",
+        "center": {
+            "lat": -0.0236,
+            "lng": 37.9062
+        }
     },
     {
         "country": "Kiribati",
@@ -969,7 +1404,12 @@
             "Russia"
         ],
         "continent": "Asia",
-        "capital": "Pyongyang"
+        "capital": "Pyongyang",
+        "iso3166": "KP",
+        "center": {
+            "lat": 40.3399,
+            "lng": 127.5101
+        }
     },
     {
         "country": "South Korea",
@@ -977,7 +1417,12 @@
             "North Korea"
         ],
         "continent": "Asia",
-        "capital": "Seoul"
+        "capital": "Seoul",
+        "iso3166": "KR",
+        "center": {
+            "lat": 35.9078,
+            "lng": 127.7669
+        }
     },
     {
         "country": "Kosovo",
@@ -988,7 +1433,12 @@
             "Serbia"
         ],
         "continent": "Europe",
-        "capital": "Pristina"
+        "capital": "Pristina",
+        "iso3166": "XK",
+        "center": {
+            "lat": 42.6026,
+            "lng": 20.903
+        }
     },
     {
         "country": "Kuwait",
@@ -997,7 +1447,12 @@
             "Saudi Arabia"
         ],
         "continent": "Asia",
-        "capital": "Kuwait City"
+        "capital": "Kuwait City",
+        "iso3166": "KW",
+        "center": {
+            "lat": 29.3117,
+            "lng": 47.4818
+        }
     },
     {
         "country": "Kyrgyzstan",
@@ -1008,7 +1463,12 @@
             "Uzbekistan"
         ],
         "continent": "Asia",
-        "capital": "Bishkek"
+        "capital": "Bishkek",
+        "iso3166": "KG",
+        "center": {
+            "lat": 41.2044,
+            "lng": 74.7661
+        }
     },
     {
         "country": "Laos",
@@ -1020,7 +1480,12 @@
             "Vietnam"
         ],
         "continent": "Asia",
-        "capital": "Vientiane"
+        "capital": "Vientiane",
+        "iso3166": "LA",
+        "center": {
+            "lat": 19.8563,
+            "lng": 102.4955
+        }
     },
     {
         "country": "Latvia",
@@ -1031,7 +1496,12 @@
             "Russia"
         ],
         "continent": "Europe",
-        "capital": "Riga"
+        "capital": "Riga",
+        "iso3166": "LV",
+        "center": {
+            "lat": 56.8796,
+            "lng": 24.6032
+        }
     },
     {
         "country": "Lebanon",
@@ -1040,7 +1510,12 @@
             "Syria"
         ],
         "continent": "Asia",
-        "capital": "Beirut"
+        "capital": "Beirut",
+        "iso3166": "LB",
+        "center": {
+            "lat": 33.8547,
+            "lng": 35.8623
+        }
     },
     {
         "country": "Lesotho",
@@ -1048,7 +1523,12 @@
             "South Africa"
         ],
         "continent": "Africa",
-        "capital": "Maseru"
+        "capital": "Maseru",
+        "iso3166": "LS",
+        "center": {
+            "lat": -29.61,
+            "lng": 28.23
+        }
     },
     {
         "country": "Liberia",
@@ -1058,7 +1538,12 @@
             "Sierra Leone"
         ],
         "continent": "Africa",
-        "capital": "Monrovia"
+        "capital": "Monrovia",
+        "iso3166": "LR",
+        "center": {
+            "lat": 6.4281,
+            "lng": -9.4295
+        }
     },
     {
         "country": "Libya",
@@ -1071,7 +1556,12 @@
             "Tunisia"
         ],
         "continent": "Africa",
-        "capital": "Tripoli"
+        "capital": "Tripoli",
+        "iso3166": "LY",
+        "center": {
+            "lat": 26.3351,
+            "lng": 17.2283
+        }
     },
     {
         "country": "Liechtenstein",
@@ -1080,7 +1570,12 @@
             "Switzerland"
         ],
         "continent": "Europe",
-        "capital": "Vaduz"
+        "capital": "Vaduz",
+        "iso3166": "LI",
+        "center": {
+            "lat": 47.166,
+            "lng": 9.5554
+        }
     },
     {
         "country": "Lithuania",
@@ -1091,7 +1586,12 @@
             "Russia"
         ],
         "continent": "Europe",
-        "capital": "Vilnius"
+        "capital": "Vilnius",
+        "iso3166": "LT",
+        "center": {
+            "lat": 55.1694,
+            "lng": 23.8813
+        }
     },
     {
         "country": "Luxembourg",
@@ -1107,13 +1607,23 @@
                 "label": "Casemates du Bock",
                 "img": "luxembourg-casemates.png"
             }
-        ]
+        ],
+        "iso3166": "LU",
+        "center": {
+            "lat": 49.8153,
+            "lng": 6.1296
+        }
     },
     {
         "country": "Madagascar",
         "borders": [],
         "continent": "Africa",
-        "capital": "Antananarivo"
+        "capital": "Antananarivo",
+        "iso3166": "MG",
+        "center": {
+            "lat": -19.5858,
+            "lng": 46.7658
+        }
     },
     {
         "country": "Malawi",
@@ -1123,7 +1633,12 @@
             "Zambia"
         ],
         "continent": "Africa",
-        "capital": "Lilongwe"
+        "capital": "Lilongwe",
+        "iso3166": "MW",
+        "center": {
+            "lat": -13.2543,
+            "lng": 34.3015
+        }
     },
     {
         "country": "Malaysia",
@@ -1133,13 +1648,23 @@
             "Thailand"
         ],
         "continent": "Asia",
-        "capital": "Kuala Lumpur"
+        "capital": "Kuala Lumpur",
+        "iso3166": "MY",
+        "center": {
+            "lat": 4.2105,
+            "lng": 101.9758
+        }
     },
     {
         "country": "Maldives",
         "borders": [],
         "continent": "Asia",
-        "capital": "Malé"
+        "capital": "Malé",
+        "iso3166": "MV",
+        "center": {
+            "lat": 3.2028,
+            "lng": 73.2207
+        }
     },
     {
         "country": "Mali",
@@ -1153,13 +1678,23 @@
             "Senegal"
         ],
         "continent": "Africa",
-        "capital": "Bamako"
+        "capital": "Bamako",
+        "iso3166": "ML",
+        "center": {
+            "lat": 17.5707,
+            "lng": -3.9962
+        }
     },
     {
         "country": "Malta",
         "borders": [],
         "continent": "Europe",
-        "capital": "Valletta"
+        "capital": "Valletta",
+        "iso3166": "MT",
+        "center": {
+            "lat": 35.9375,
+            "lng": 14.375
+        }
     },
     {
         "country": "Marshall Islands",
@@ -1175,13 +1710,23 @@
             "Senegal"
         ],
         "continent": "Africa",
-        "capital": "Nouakchott"
+        "capital": "Nouakchott",
+        "iso3166": "MR",
+        "center": {
+            "lat": 20.3579,
+            "lng": -10.2378
+        }
     },
     {
         "country": "Mauritius",
         "borders": [],
         "continent": "Africa",
-        "capital": "Port Louis"
+        "capital": "Port Louis",
+        "iso3166": "MU",
+        "center": {
+            "lat": -20.3484,
+            "lng": 57.5522
+        }
     },
     {
         "country": "Mexico",
@@ -1191,7 +1736,12 @@
             "United States"
         ],
         "continent": "North America",
-        "capital": "Mexico City"
+        "capital": "Mexico City",
+        "iso3166": "MX",
+        "center": {
+            "lat": 23.6345,
+            "lng": -102.5528
+        }
     },
     {
         "country": "Federated States of Micronesia",
@@ -1206,7 +1756,12 @@
             "Ukraine"
         ],
         "continent": "Europe",
-        "capital": "Chișinău"
+        "capital": "Chișinău",
+        "iso3166": "MD",
+        "center": {
+            "lat": 47.4116,
+            "lng": 28.3699
+        }
     },
     {
         "country": "Monaco",
@@ -1214,7 +1769,12 @@
             "France"
         ],
         "continent": "Europe",
-        "capital": "Monaco"
+        "capital": "Monaco",
+        "iso3166": "MC",
+        "center": {
+            "lat": 43.7384,
+            "lng": 7.4246
+        }
     },
     {
         "country": "Mongolia",
@@ -1223,7 +1783,12 @@
             "Russia"
         ],
         "continent": "Asia",
-        "capital": "Ulan Bator"
+        "capital": "Ulan Bator",
+        "iso3166": "MN",
+        "center": {
+            "lat": 46.8625,
+            "lng": 103.8467
+        }
     },
     {
         "country": "Montenegro",
@@ -1235,7 +1800,12 @@
             "Serbia"
         ],
         "continent": "Europe",
-        "capital": "Podgorica"
+        "capital": "Podgorica",
+        "iso3166": "ME",
+        "center": {
+            "lat": 42.7087,
+            "lng": 19.3744
+        }
     },
     {
         "country": "Morocco",
@@ -1244,7 +1814,12 @@
             "Spain"
         ],
         "continent": "Africa",
-        "capital": "Rabat"
+        "capital": "Rabat",
+        "iso3166": "MA",
+        "center": {
+            "lat": 31.7917,
+            "lng": -7.0926
+        }
     },
     {
         "country": "Mozambique",
@@ -1257,7 +1832,12 @@
             "Zimbabwe"
         ],
         "continent": "Africa",
-        "capital": "Maputo"
+        "capital": "Maputo",
+        "iso3166": "MZ",
+        "center": {
+            "lat": -18.6657,
+            "lng": 35.5296
+        }
     },
     {
         "country": "Myanmar",
@@ -1269,7 +1849,12 @@
             "Thailand"
         ],
         "continent": "Asia",
-        "capital": "Naypyidaw"
+        "capital": "Naypyidaw",
+        "iso3166": "MM",
+        "center": {
+            "lat": 21.9162,
+            "lng": 95.956
+        }
     },
     {
         "country": "Namibia",
@@ -1280,7 +1865,12 @@
             "Zambia"
         ],
         "continent": "Africa",
-        "capital": "Windhoek"
+        "capital": "Windhoek",
+        "iso3166": "NA",
+        "center": {
+            "lat": -22.9576,
+            "lng": 18.4904
+        }
     },
     {
         "country": "Nauru",
@@ -1295,7 +1885,12 @@
             "India"
         ],
         "continent": "Asia",
-        "capital": "Kathmandu"
+        "capital": "Kathmandu",
+        "iso3166": "NP",
+        "center": {
+            "lat": 28.3949,
+            "lng": 84.124
+        }
     },
     {
         "country": "Netherlands",
@@ -1305,7 +1900,12 @@
             "France"
         ],
         "continent": "Europe",
-        "capital": "Amsterdam"
+        "capital": "Amsterdam",
+        "iso3166": "NL",
+        "center": {
+            "lat": 52.1326,
+            "lng": 5.2913
+        }
     },
     {
         "country": "New Zealand",
@@ -1320,7 +1920,12 @@
             "Honduras"
         ],
         "continent": "North America",
-        "capital": "Managua"
+        "capital": "Managua",
+        "iso3166": "NI",
+        "center": {
+            "lat": 12.8654,
+            "lng": -85.2072
+        }
     },
     {
         "country": "Niger",
@@ -1334,7 +1939,12 @@
             "Nigeria"
         ],
         "continent": "Africa",
-        "capital": "Niamey"
+        "capital": "Niamey",
+        "iso3166": "NE",
+        "center": {
+            "lat": 17.6078,
+            "lng": 8.0817
+        }
     },
     {
         "country": "Nigeria",
@@ -1345,7 +1955,12 @@
             "Niger"
         ],
         "continent": "Africa",
-        "capital": "Abuja"
+        "capital": "Abuja",
+        "iso3166": "NG",
+        "center": {
+            "lat": 9.082,
+            "lng": 8.6753
+        }
     },
     {
         "country": "North Macedonia",
@@ -1357,7 +1972,12 @@
             "Serbia"
         ],
         "continent": "Europe",
-        "capital": "Skopje"
+        "capital": "Skopje",
+        "iso3166": "MK",
+        "center": {
+            "lat": 41.6086,
+            "lng": 21.7453
+        }
     },
     {
         "country": "Norway",
@@ -1367,7 +1987,12 @@
             "Russia"
         ],
         "continent": "Europe",
-        "capital": "Oslo"
+        "capital": "Oslo",
+        "iso3166": "NO",
+        "center": {
+            "lat": 60.472,
+            "lng": 8.4689
+        }
     },
     {
         "country": "Oman",
@@ -1377,7 +2002,12 @@
             "Yemen"
         ],
         "continent": "Asia",
-        "capital": "Muscat"
+        "capital": "Muscat",
+        "iso3166": "OM",
+        "center": {
+            "lat": 21.4735,
+            "lng": 55.9754
+        }
     },
     {
         "country": "Pakistan",
@@ -1388,7 +2018,12 @@
             "China"
         ],
         "continent": "Asia",
-        "capital": "Islamabad"
+        "capital": "Islamabad",
+        "iso3166": "PK",
+        "center": {
+            "lat": 30.3753,
+            "lng": 69.3451
+        }
     },
     {
         "country": "Palau",
@@ -1404,7 +2039,8 @@
             "Jordan"
         ],
         "continent": "Asia",
-        "capital": "Ramallah|Jerusalem"
+        "capital": "Ramallah|Jerusalem",
+        "iso3166": "PS"
     },
     {
         "country": "Panama",
@@ -1413,7 +2049,12 @@
             "Costa Rica"
         ],
         "continent": "North America",
-        "capital": "Panama City"
+        "capital": "Panama City",
+        "iso3166": "PA",
+        "center": {
+            "lat": 8.538,
+            "lng": -80.7821
+        }
     },
     {
         "country": "Papua New Guinea",
@@ -1431,7 +2072,12 @@
             "Brazil"
         ],
         "continent": "South America",
-        "capital": "Asunción"
+        "capital": "Asunción",
+        "iso3166": "PY",
+        "center": {
+            "lat": -23.4425,
+            "lng": -58.4438
+        }
     },
     {
         "country": "Peru",
@@ -1443,13 +2089,23 @@
             "Ecuador"
         ],
         "continent": "South America",
-        "capital": "Lima"
+        "capital": "Lima",
+        "iso3166": "PE",
+        "center": {
+            "lat": -9.189967,
+            "lng": -75.015152
+        }
     },
     {
         "country": "Philippines",
         "borders": [],
         "continent": "Asia",
-        "capital": "Manila"
+        "capital": "Manila",
+        "iso3166": "PH",
+        "center": {
+            "lat": 12.8797,
+            "lng": 121.774
+        }
     },
     {
         "country": "Poland",
@@ -1463,7 +2119,12 @@
             "Ukraine"
         ],
         "continent": "Europe",
-        "capital": "Warsaw"
+        "capital": "Warsaw",
+        "iso3166": "PL",
+        "center": {
+            "lat": 51.9194,
+            "lng": 19.1451
+        }
     },
     {
         "country": "Portugal",
@@ -1477,7 +2138,12 @@
                 "label": "Sintra",
                 "img": "sintra.png"
             }
-        ]
+        ],
+        "iso3166": "PT",
+        "center": {
+            "lat": 39.3999,
+            "lng": -8.2245
+        }
     },
     {
         "country": "Qatar",
@@ -1485,7 +2151,12 @@
             "Saudi Arabia"
         ],
         "continent": "Asia",
-        "capital": "Doha"
+        "capital": "Doha",
+        "iso3166": "QA",
+        "center": {
+            "lat": 25.3548,
+            "lng": 51.1839
+        }
     },
     {
         "country": "Romania",
@@ -1497,7 +2168,12 @@
             "Ukraine"
         ],
         "continent": "Europe",
-        "capital": "Bucharest"
+        "capital": "Bucharest",
+        "iso3166": "RO",
+        "center": {
+            "lat": 45.9432,
+            "lng": 24.9668
+        }
     },
     {
         "country": "Russia",
@@ -1518,7 +2194,12 @@
             "Ukraine"
         ],
         "continent": "Europe/Asia",
-        "capital": "Moscow"
+        "capital": "Moscow",
+        "iso3166": "RU",
+        "center": {
+            "lat": 61.524,
+            "lng": 105.3188
+        }
     },
     {
         "country": "Rwanda",
@@ -1529,25 +2210,45 @@
             "Uganda"
         ],
         "continent": "Africa",
-        "capital": "Kigali"
+        "capital": "Kigali",
+        "iso3166": "RW",
+        "center": {
+            "lat": -1.9403,
+            "lng": 29.8739
+        }
     },
     {
         "country": "Saint Kitts and Nevis",
         "borders": [],
         "continent": "North America",
-        "capital": "Basseterre"
+        "capital": "Basseterre",
+        "iso3166": "KN",
+        "center": {
+            "lat": 17.357822,
+            "lng": -62.782998
+        }
     },
     {
         "country": "Saint Lucia",
         "borders": [],
         "continent": "North America",
-        "capital": "Castries"
+        "capital": "Castries",
+        "iso3166": "LC",
+        "center": {
+            "lat": 13.909444,
+            "lng": -60.978893
+        }
     },
     {
         "country": "Saint Vincent and the Grenadines",
         "borders": [],
         "continent": "North America",
-        "capital": "Kingstown"
+        "capital": "Kingstown",
+        "iso3166": "VC",
+        "center": {
+            "lat": 12.984305,
+            "lng": -61.287228
+        }
     },
     {
         "country": "Samoa",
@@ -1561,13 +2262,23 @@
             "Italy"
         ],
         "continent": "Europe",
-        "capital": "City of San Marino"
+        "capital": "City of San Marino",
+        "iso3166": "SM",
+        "center": {
+            "lat": 43.9424,
+            "lng": 12.4578
+        }
     },
     {
         "country": "São Tomé and Príncipe",
         "borders": [],
         "continent": "Africa",
-        "capital": "São Tomé"
+        "capital": "São Tomé",
+        "iso3166": "ST",
+        "center": {
+            "lat": 0.1864,
+            "lng": 6.6131
+        }
     },
     {
         "country": "Saudi Arabia",
@@ -1581,7 +2292,12 @@
             "Yemen"
         ],
         "continent": "Asia",
-        "capital": "Riyadh"
+        "capital": "Riyadh",
+        "iso3166": "SA",
+        "center": {
+            "lat": 23.8859,
+            "lng": 45.0792
+        }
     },
     {
         "country": "Senegal",
@@ -1593,7 +2309,12 @@
             "Mauritania"
         ],
         "continent": "Africa",
-        "capital": "Dakar"
+        "capital": "Dakar",
+        "iso3166": "SN",
+        "center": {
+            "lat": 14.4974,
+            "lng": -14.4524
+        }
     },
     {
         "country": "Serbia",
@@ -1608,13 +2329,23 @@
             "Romania"
         ],
         "continent": "Europe",
-        "capital": "Belgrade"
+        "capital": "Belgrade",
+        "iso3166": "RS",
+        "center": {
+            "lat": 44.0165,
+            "lng": 21.0059
+        }
     },
     {
         "country": "Seychelles",
         "borders": [],
         "continent": "Africa",
-        "capital": "Victoria"
+        "capital": "Victoria",
+        "iso3166": "SC",
+        "center": {
+            "lat": -4.6796,
+            "lng": 55.492
+        }
     },
     {
         "country": "Sierra Leone",
@@ -1623,13 +2354,23 @@
             "Liberia"
         ],
         "continent": "Africa",
-        "capital": "Freetown"
+        "capital": "Freetown",
+        "iso3166": "SL",
+        "center": {
+            "lat": 8.4606,
+            "lng": -11.7799
+        }
     },
     {
         "country": "Singapore",
         "borders": [],
         "continent": "Asia",
-        "capital": "Singapore"
+        "capital": "Singapore",
+        "iso3166": "SG",
+        "center": {
+            "lat": 1.3521,
+            "lng": 103.8198
+        }
     },
     {
         "country": "Slovakia",
@@ -1641,7 +2382,12 @@
             "Ukraine"
         ],
         "continent": "Europe",
-        "capital": "Bratislava"
+        "capital": "Bratislava",
+        "iso3166": "SK",
+        "center": {
+            "lat": 48.669,
+            "lng": 19.699
+        }
     },
     {
         "country": "Slovenia",
@@ -1652,7 +2398,12 @@
             "Hungary"
         ],
         "continent": "Europe",
-        "capital": "Ljubljana"
+        "capital": "Ljubljana",
+        "iso3166": "SI",
+        "center": {
+            "lat": 46.1512,
+            "lng": 14.9955
+        }
     },
     {
         "country": "Solomon Islands",
@@ -1668,7 +2419,12 @@
             "Kenya"
         ],
         "continent": "Africa",
-        "capital": "Mogadishu"
+        "capital": "Mogadishu",
+        "iso3166": "SO",
+        "center": {
+            "lat": 5.1521,
+            "lng": 46.1996
+        }
     },
     {
         "country": "South Africa",
@@ -1681,7 +2437,12 @@
             "Zimbabwe"
         ],
         "continent": "Africa",
-        "capital": "Pretoria|Bloemfontein|Cape Town"
+        "capital": "Pretoria|Bloemfontein|Cape Town",
+        "iso3166": "ZA",
+        "center": {
+            "lat": -30.5595,
+            "lng": 22.9375
+        }
     },
     {
         "country": "South Sudan",
@@ -1694,7 +2455,12 @@
             "Uganda"
         ],
         "continent": "Africa",
-        "capital": "Juba"
+        "capital": "Juba",
+        "iso3166": "SS",
+        "center": {
+            "lat": 6.877,
+            "lng": 31.307
+        }
     },
     {
         "country": "Spain",
@@ -1711,13 +2477,23 @@
                 "label": "Sagrada Familia",
                 "img": "barcelona-sagrada-familia.png"
             }
-        ]
+        ],
+        "iso3166": "ES",
+        "center": {
+            "lat": 40.4637,
+            "lng": -3.7492
+        }
     },
     {
         "country": "Sri Lanka",
         "borders": [],
         "continent": "Asia",
-        "capital": "Sri Jayawardenepura Kotte"
+        "capital": "Sri Jayawardenepura Kotte",
+        "iso3166": "LK",
+        "center": {
+            "lat": 7.8731,
+            "lng": 80.7718
+        }
     },
     {
         "country": "Sudan",
@@ -1731,7 +2507,12 @@
             "South Sudan"
         ],
         "continent": "Africa",
-        "capital": "Khartoum"
+        "capital": "Khartoum",
+        "iso3166": "SD",
+        "center": {
+            "lat": 12.8628,
+            "lng": 30.2176
+        }
     },
     {
         "country": "Suriname",
@@ -1741,7 +2522,12 @@
             "Guyana"
         ],
         "continent": "South America",
-        "capital": "Paramaribo"
+        "capital": "Paramaribo",
+        "iso3166": "SR",
+        "center": {
+            "lat": 3.919305,
+            "lng": -56.027783
+        }
     },
     {
         "country": "Sweden",
@@ -1750,7 +2536,12 @@
             "Norway"
         ],
         "continent": "Europe",
-        "capital": "Stockholm"
+        "capital": "Stockholm",
+        "iso3166": "SE",
+        "center": {
+            "lat": 60.1282,
+            "lng": 18.6435
+        }
     },
     {
         "country": "Switzerland",
@@ -1768,7 +2559,12 @@
                 "label": "Matterhorn",
                 "img": "matterhorn.png"
             }
-        ]
+        ],
+        "iso3166": "CH",
+        "center": {
+            "lat": 46.8182,
+            "lng": 8.2275
+        }
     },
     {
         "country": "Syria",
@@ -1780,7 +2576,12 @@
             "Turkey"
         ],
         "continent": "Asia",
-        "capital": "Damascus"
+        "capital": "Damascus",
+        "iso3166": "SY",
+        "center": {
+            "lat": 34.8021,
+            "lng": 38.9968
+        }
     },
     {
         "country": "Tajikistan",
@@ -1791,7 +2592,12 @@
             "Uzbekistan"
         ],
         "continent": "Asia",
-        "capital": "Dushanbe"
+        "capital": "Dushanbe",
+        "iso3166": "TJ",
+        "center": {
+            "lat": 38.861,
+            "lng": 71.2761
+        }
     },
     {
         "country": "Tanzania",
@@ -1806,7 +2612,12 @@
             "Zambia"
         ],
         "continent": "Africa",
-        "capital": "Dodoma"
+        "capital": "Dodoma",
+        "iso3166": "TZ",
+        "center": {
+            "lat": -6.369,
+            "lng": 34.8888
+        }
     },
     {
         "country": "Thailand",
@@ -1817,7 +2628,12 @@
             "Myanmar"
         ],
         "continent": "Asia",
-        "capital": "Bangkok"
+        "capital": "Bangkok",
+        "iso3166": "TH",
+        "center": {
+            "lat": 15.87,
+            "lng": 100.9925
+        }
     },
     {
         "country": "Togo",
@@ -1827,7 +2643,12 @@
             "Ghana"
         ],
         "continent": "Africa",
-        "capital": "Lomé"
+        "capital": "Lomé",
+        "iso3166": "TG",
+        "center": {
+            "lat": 8.6195,
+            "lng": 0.8248
+        }
     },
     {
         "country": "Tonga",
@@ -1839,7 +2660,12 @@
         "country": "Trinidad and Tobago",
         "borders": [],
         "continent": "North America",
-        "capital": "Port of Spain"
+        "capital": "Port of Spain",
+        "iso3166": "TT",
+        "center": {
+            "lat": 10.691803,
+            "lng": -61.222503
+        }
     },
     {
         "country": "Tunisia",
@@ -1848,7 +2674,12 @@
             "Libya"
         ],
         "continent": "Africa",
-        "capital": "Tunis"
+        "capital": "Tunis",
+        "iso3166": "TN",
+        "center": {
+            "lat": 33.8869,
+            "lng": 9.5375
+        }
     },
     {
         "country": "Turkey",
@@ -1863,7 +2694,12 @@
             "Syria"
         ],
         "continent": "Europe/Asia",
-        "capital": "Ankara"
+        "capital": "Ankara",
+        "iso3166": "TR",
+        "center": {
+            "lat": 38.9637,
+            "lng": 35.2433
+        }
     },
     {
         "country": "Turkmenistan",
@@ -1874,7 +2710,12 @@
             "Uzbekistan"
         ],
         "continent": "Asia",
-        "capital": "Ashgabat"
+        "capital": "Ashgabat",
+        "iso3166": "TM",
+        "center": {
+            "lat": 38.9697,
+            "lng": 59.5563
+        }
     },
     {
         "country": "Tuvalu",
@@ -1892,7 +2733,12 @@
             "Tanzania"
         ],
         "continent": "Africa",
-        "capital": "Kampala"
+        "capital": "Kampala",
+        "iso3166": "UG",
+        "center": {
+            "lat": 1.3733,
+            "lng": 32.2903
+        }
     },
     {
         "country": "Ukraine",
@@ -1906,7 +2752,12 @@
             "Slovakia"
         ],
         "continent": "Europe",
-        "capital": "Kyiv"
+        "capital": "Kyiv",
+        "iso3166": "UA",
+        "center": {
+            "lat": 48.3794,
+            "lng": 31.1656
+        }
     },
     {
         "country": "United Arab Emirates",
@@ -1915,7 +2766,12 @@
             "Saudi Arabia"
         ],
         "continent": "Asia",
-        "capital": "Abu Dhabi"
+        "capital": "Abu Dhabi",
+        "iso3166": "AE",
+        "center": {
+            "lat": 23.4241,
+            "lng": 53.8478
+        }
     },
     {
         "country": "United Kingdom",
@@ -1924,7 +2780,12 @@
         ],
         "continent": "Europe",
         "nopath": true,
-        "capital": "London"
+        "capital": "London",
+        "iso3166": "GB",
+        "center": {
+            "lat": 55.3781,
+            "lng": -3.436
+        }
     },
     {
         "country": "United States",
@@ -1933,7 +2794,12 @@
             "Mexico"
         ],
         "continent": "North America",
-        "capital": "Washington, D.C."
+        "capital": "Washington, D.C.",
+        "iso3166": "US",
+        "center": {
+            "lat": 37.09024,
+            "lng": -95.712891
+        }
     },
     {
         "country": "Uruguay",
@@ -1942,7 +2808,12 @@
             "Brazil"
         ],
         "continent": "South America",
-        "capital": "Montevideo"
+        "capital": "Montevideo",
+        "iso3166": "UY",
+        "center": {
+            "lat": -32.522779,
+            "lng": -55.765835
+        }
     },
     {
         "country": "Uzbekistan",
@@ -1954,7 +2825,12 @@
             "Turkmenistan"
         ],
         "continent": "Asia",
-        "capital": "Tashkent"
+        "capital": "Tashkent",
+        "iso3166": "UZ",
+        "center": {
+            "lat": 41.3775,
+            "lng": 64.5853
+        }
     },
     {
         "country": "Vanuatu",
@@ -1968,7 +2844,12 @@
             "Italy"
         ],
         "continent": "Europe",
-        "capital": "Vatican City"
+        "capital": "Vatican City",
+        "iso3166": "VA",
+        "center": {
+            "lat": 41.9029,
+            "lng": 12.4534
+        }
     },
     {
         "country": "Venezuela",
@@ -1978,7 +2859,12 @@
             "Guyana"
         ],
         "continent": "South America",
-        "capital": "Caracas"
+        "capital": "Caracas",
+        "iso3166": "VE",
+        "center": {
+            "lat": 6.42375,
+            "lng": -66.58973
+        }
     },
     {
         "country": "Vietnam",
@@ -1988,7 +2874,12 @@
             "Laos"
         ],
         "continent": "Asia",
-        "capital": "Hanoi"
+        "capital": "Hanoi",
+        "iso3166": "VN",
+        "center": {
+            "lat": 14.0583,
+            "lng": 108.2772
+        }
     },
     {
         "country": "Yemen",
@@ -1997,7 +2888,12 @@
             "Saudi Arabia"
         ],
         "continent": "Asia",
-        "capital": "Sana'a"
+        "capital": "Sana'a",
+        "iso3166": "YE",
+        "center": {
+            "lat": 15.5527,
+            "lng": 48.5164
+        }
     },
     {
         "country": "Zambia",
@@ -2012,7 +2908,12 @@
             "Zimbabwe"
         ],
         "continent": "Africa",
-        "capital": "Lusaka"
+        "capital": "Lusaka",
+        "iso3166": "ZM",
+        "center": {
+            "lat": -13.1339,
+            "lng": 27.8493
+        }
     },
     {
         "country": "Zimbabwe",
@@ -2023,6 +2924,11 @@
             "Zambia"
         ],
         "continent": "Africa",
-        "capital": "Harare"
+        "capital": "Harare",
+        "iso3166": "ZW",
+        "center": {
+            "lat": -19.0154,
+            "lng": 29.1549
+        }
     }
 ]

@@ -22,7 +22,10 @@ const Sites = ({ handleItemClick }) => {
     return (
         <div className="flex justify-between">
             {SITES.map((item, key) => {
-                return <img key={key} onClick={handleItemClick} data-type="site" data-label={item.label} src={`/images/sites/${item.img}`} className={SITES_IMAGE_CLASS} />
+                return <div key={key} onClick={handleItemClick} data-type="site" data-label={item.label}
+                    className="rounded-full w-14 h-14 bg-white bg-center bg-cover bg-no-repeat"
+                    style={{ backgroundImage: `url('/images/sites/${item.img}')` }}
+                ></div>
             })}
         </div>
     );

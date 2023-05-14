@@ -1,35 +1,35 @@
 import { useRef } from 'react';
 import { POPUP_IMG_WIDTH, POPUP_IMG_HEIGHT } from '@/utils/constants';
 
+const ZOOM_LEVEL = 9;
+
 export default function Popup({ handleItemClicked, active, setPopupOpen, popupItem }) {
     const closeContainerRef = useRef(null);
     const closeBtnRef = useRef(null);
     const popupContentRef = useRef(null);
+    const mapRef = useRef(null);
+    const { mappingData = {} } = popupItem;
 
-    const popupContainerStyle = {/*
-        position: 'fixed',
-        zIndex: 100,
-        top: 0,
-        left: 0,
-        justifyContent: 'center',
-        width: '100vw',
-        height: '100vh',
-        background: 'rgba(255,255,255,.2)',*/
-    };
+    const LATITUDE = mappingData.center?.lat;
+    const LONGITUDE = mappingData.center?.long;
+    const COUNTRY_CODE = mappingData.code;
+
+    const popupContainerStyle = {};
     popupContainerStyle.display = active ? 'flex' : 'none';
 
-    const popupWrapper = {
-        position: 'relative',
-        top: '70px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        width: '90%',
-        height: '33%',
-        overflowY: 'auto',
-        color: 'rgba(255,255,255,1)',
-        padding: '10px',
+    var map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: LATITUDE, lng: LONGITUDE },
+            zoom: ZOOM_LEVEL
+        });
+        var country = new google.maps.Data();
+        country.loadGeoJson('https://raw.githubusercontent.com/johan/world.geo.json/master/countries/' + COUNTRY_CODE + '.geo.json');
+        var bordering = new google.maps.Data();
+        bordering.loadGeoJson('https://raw.githubusercontent.com/johan/world.geo.json/master/countries/' + YOUR_BORDERING_COUNTRIES_CODES + '.geo.json');
+        country.setMap(map);
+        bordering.setMap(map);
     }
 
     const thumbStyle = {
@@ -40,36 +40,6 @@ export default function Popup({ handleItemClicked, active, setPopupOpen, popupIt
     if (!popupItem.selected) {
         thumbStyle.filter = 'saturate(20%)';
     }
-
-    const popupCloseWrapper = {
-        position: 'absolute',
-        top: '5px',
-        right: '5px',
-        zIndex: 150,
-        cursor: 'pointer'
-    };
-
-    const popupContent = {
-        border: '2px solid black',
-        backgroundColor: 'black',
-        position: 'relative',
-        color: 'inherit',
-        width: '100%',
-        marginBottom: '10px',
-        padding: '10px',
-        maxHeight: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-    };
-
-    // With lots of attempts using ChatGPT, this is the Selected icon I chose.
-    const greenCheckbox = (
-        <svg width="30" height="30" viewBox="0 0 40 40">
-            <circle cx="20" cy="20" r="12" fill="#008000" />
-            <path d="M13,20 l4,4 l8,-8" stroke="#FFF" strokeWidth="2" fill="none" />
-        </svg>
-    );
 
     const handleClose = e => {
         setPopupOpen(false);
@@ -87,6 +57,7 @@ export default function Popup({ handleItemClicked, active, setPopupOpen, popupIt
 
     return (
         <div ref={closeContainerRef} onClick={handleOuterClick} className="fixed z-50 top-0 left-0 flex justify-center w-screen h-screen bg-white bg-opacity-20" style={popupContainerStyle}> {/* full page transparent overlay block */}
+
             <div className="relative top-20 flex flex-col justify-start items-center w-90 overflow-y-auto text-white p-10"> {/* wrapper to provide a maximum height for popup block */}
 
                 <div ref={popupContentRef} className="border-2 border-black bg-black relative text-inherit w-full mb-10 p-10 max-h-full flex flex-col items-center">  {/* visible popup content */}
