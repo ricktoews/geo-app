@@ -8,12 +8,12 @@ import { getGeoPath } from '../utils/get-path';
 import { normalizeString } from '../utils/helpers';
 import { useLoadScript, GoogleMap } from '@react-google-maps/api';
 import { getMappingData, selectSites } from '../utils/map-helpers';
+import { DEFAULT_ZOOM } from '@/utils/constants';
 
 import countries from '../data/borders.json';
 
 const STARTING_ROUTE_POINTS = 10;
 const POINTS_PER_CHALLENGE = 3;
-const ZOOM = 3;
 const OPTIONS = {
     disableDefaultUI: true
 };
@@ -24,6 +24,7 @@ export default function Game(props) {
     const [poolContinents, setPoolContinents] = useState([]);
     const [origCountry, setOrigCountry] = useState('');
     const [destCountry, setDestCountry] = useState('');
+    const [countryObject, setCountryObject] = useState(null);
     const [mappingData, setMappingData] = useState({});
     const [challengeCountry, setChallengeCountry] = useState({});
     const [currentBorders, setCurrentBorders] = useState([]);
@@ -81,6 +82,9 @@ export default function Game(props) {
         const randOrigin = pool[origNdx].country;
         const randDest = pool[destNdx].country;
         setOrigCountry(randOrigin);
+        console.log('====> setCountryObject', pool[origNdx]);
+        setCountryObject(pool[origNdx]);
+
 
         setCoords(pool[origNdx].center);
         setDestCountry(randDest);
@@ -159,7 +163,8 @@ export default function Game(props) {
         const countryObj = getCountryObject(countryName);
         setMappingData(_mappingData);
         setCoords(_mappingData.center);
-
+        console.log('====> setCountryObject', countryObj);
+        setCountryObject(countryObj);
         setOrigCountry(countryName);
         setCurrentBorders(countryObj.borders);
         setSitesToVisit(selectSites(countries, poolContinents));
@@ -262,8 +267,8 @@ export default function Game(props) {
                 </>)
             }
             {isLoaded ? <div className="bottom-5 fixed left-1/2 transform -translate-x-1/2">
-                <GoogleMap options={OPTIONS} zoom={ZOOM} center={coords} mapContainerClassName="map-container">
-                    <Border country={origCountry} />
+                <GoogleMap options={OPTIONS} zoom={DEFAULT_ZOOM} center={coords} mapContainerClassName="map-container">
+                    <Border country={origCountry} countryObject={countryObject} />
                 </GoogleMap>
             </div> : <div>Not loaded</div>}
         </div>

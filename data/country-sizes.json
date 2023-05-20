@@ -1,0 +1,186 @@
+{
+    "Albania": {
+        "sq_miles": 11100,
+        "sq_km": 28748
+    },
+    "Andorra": {
+        "sq_miles": 180.55,
+        "sq_km": 468
+    },
+    "Austria": {
+        "sq_miles": 32020,
+        "sq_km": 82933
+    },
+    "Belarus": {
+        "sq_miles": 80155,
+        "sq_km": 207600
+    },
+    "Belgium": {
+        "sq_miles": 11787,
+        "sq_km": 30528
+    },
+    "Bosnia and Herzegovina": {
+        "sq_miles": 19549,
+        "sq_km": 50542
+    },
+    "Bulgaria": {
+        "sq_miles": 42748,
+        "sq_km": 110879
+    },
+    "Croatia": {
+        "sq_miles": 21831,
+        "sq_km": 56594
+    },
+    "Cyprus": {
+        "sq_miles": 3571,
+        "sq_km": 9251
+    },
+    "Czechia": {
+        "sq_miles": 30450,
+        "sq_km": 78867
+    },
+    "Denmark": {
+        "sq_miles": 16557,
+        "sq_km": 42924
+    },
+    "Estonia": {
+        "sq_miles": 17436,
+        "sq_km": 45227
+    },
+    "Finland": {
+        "sq_miles": 130666,
+        "sq_km": 338424
+    },
+    "France": {
+        "sq_miles": 248573,
+        "sq_km": 643801
+    },
+    "Germany": {
+        "sq_miles": 137847,
+        "sq_km": 357022
+    },
+    "Greece": {
+        "sq_miles": 50949,
+        "sq_km": 131957
+    },
+    "Hungary": {
+        "sq_miles": 35703,
+        "sq_km": 92528
+    },
+    "Iceland": {
+        "sq_miles": 39776,
+        "sq_km": 103000
+    },
+    "Ireland": {
+        "sq_miles": 32217,
+        "sq_km": 83323
+    },
+    "Italy": {
+        "sq_miles": 116348,
+        "sq_km": 301340
+    },
+    "Kosovo": {
+        "sq_miles": 4185,
+        "sq_km": 10887
+    },
+    "Latvia": {
+        "sq_miles": 24938,
+        "sq_km": 64559
+    },
+    "Liechtenstein": {
+        "sq_miles": 62.14,
+        "sq_km": 160
+    },
+    "Lithuania": {
+        "sq_miles": 25142,
+        "sq_km": 65300
+    },
+    "Luxembourg": {
+        "sq_miles": 998,
+        "sq_km": 2586
+    },
+    "Malta": {
+        "sq_miles": 122,
+        "sq_km": 316
+    },
+    "Moldova": {
+        "sq_miles": 13507,
+        "sq_km": 35006
+    },
+    "Monaco": {
+        "sq_miles": 0.78,
+        "sq_km": 2.02
+    },
+    "Montenegro": {
+        "sq_miles": 5502,
+        "sq_km": 14242
+    },
+    "Netherlands": {
+        "sq_miles": 16040,
+        "sq_km": 41543
+    },
+    "North Macedonia": {
+        "sq_miles": 9779,
+        "sq_km": 25713
+    },
+    "Norway": {
+        "sq_miles": 148729,
+        "sq_km": 385207
+    },
+    "Poland": {
+        "sq_miles": 120726,
+        "sq_km": 312696
+    },
+    "Portugal": {
+        "sq_miles": 35603,
+        "sq_km": 92090
+    },
+    "Romania": {
+        "sq_miles": 92046,
+        "sq_km": 238397
+    },
+    "Russia": {
+        "sq_miles": 6601668,
+        "sq_km": 17098242
+    },
+    "San Marino": {
+        "sq_miles": 24,
+        "sq_km": 61
+    },
+    "Serbia": {
+        "sq_miles": 29913,
+        "sq_km": 77474
+    },
+    "Slovakia": {
+        "sq_miles": 18932,
+        "sq_km": 49035
+    },
+    "Slovenia": {
+        "sq_miles": 7827,
+        "sq_km": 20273
+    },
+    "Spain": {
+        "sq_miles": 195364,
+        "sq_km": 505992
+    },
+    "Sweden": {
+        "sq_miles": 173860,
+        "sq_km": 450295
+    },
+    "Switzerland": {
+        "sq_miles": 15940,
+        "sq_km": 41290
+    },
+    "Ukraine": {
+        "sq_miles": 233062,
+        "sq_km": 603628
+    },
+    "United Kingdom": {
+        "sq_miles": 93628,
+        "sq_km": 242500
+    },
+    "Vatican City": {
+        "sq_miles": 0.17,
+        "sq_km": 0.44
+    }
+}

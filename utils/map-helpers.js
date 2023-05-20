@@ -1,4 +1,4 @@
-import { MAX_SITES, GEOJSON_URL } from '@/utils/constants';
+import { MAX_SITES, GEOJSON_URL, DEFAULT_ZOOM } from '@/utils/constants';
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -72,4 +72,50 @@ export async function getGeoJSON(country) {
     let result = await fetch(url);
     result = await result.json();
     return result;
+}
+
+const ZOOM_LEVEL = {
+    small: 8,
+    medium: 5,
+    large: 2
+};
+
+const zoomLevels = {
+    small: [],
+    medium: ['Ukraine'],
+    large: [],
+};
+
+const zoomThresholds = {
+    small: [0, 10000],
+    medium: [11000, 150000],
+    large: [150000, 1500000],
+    huge: [1500000, 999999999]
+
+}
+
+export function adjustZoom(country, sizeObj) {
+    console.log('====> adjustZoom; size', sizeObj);
+    const sqMiles = sizeObj?.sq_miles || 100000;
+    let zoomLevel = -1;
+    for (let size in zoomLevels) {
+        if (zoomLevels[size].indexOf(country) !== -1) {
+            zoomLevel = ZOOM_LEVEL[size];
+        }
+    }
+
+    if (zoomLevel === -1) {
+        for (let size in zoomThresholds) {
+            const threshold = zoomThresholds[size];
+            const min = threshold[0];
+            const max = threshold[1];
+            if (sqMiles >= min && sqMiles < max) {
+                zoomLevel = ZOOM_LEVEL[size];
+            }
+        }
+    }
+
+    if (zoomLevel === -1) zoomLevel = DEFAULT_ZOOM;
+
+    return zoomLevel;
 }
