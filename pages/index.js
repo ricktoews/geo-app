@@ -3,16 +3,20 @@ import ImageGrid from '@/components/ImageGrid';
 import ContinentSelector from '@/components/ContinentSelector';
 import Sites from '@/components/Sites';
 import Popup from '@/components/Popup';
+import Border from '@/components/Border';
 import { getGeoPath } from '../utils/get-path';
 import { normalizeString } from '../utils/helpers';
 import { useLoadScript, GoogleMap } from '@react-google-maps/api';
-import { getMappingData } from '../utils/map-helpers';
+import { getMappingData, selectSites } from '../utils/map-helpers';
 
 import countries from '../data/borders.json';
 
 const STARTING_ROUTE_POINTS = 10;
 const POINTS_PER_CHALLENGE = 3;
-const ZOOM = 5;
+const ZOOM = 3;
+const OPTIONS = {
+    disableDefaultUI: true
+};
 
 export default function Game(props) {
     const [popupOpen, setPopupOpen] = useState(false);
@@ -32,10 +36,8 @@ export default function Game(props) {
     const [routePoints, setRoutePoints] = useState(0);
     const [challengePoints, setChallengePoints] = useState(0);
     const challengeInput = useRef(null);
-    const [coords, setCoords] = useState({
-        "lat": 33.8869,
-        "lng": 9.5375
-    });
+    const [coords, setCoords] = useState({});
+    const [sitesToVisit, setSitesToVisit] = useState(null);
 
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_API_KEY,
@@ -68,8 +70,10 @@ export default function Game(props) {
         setRoutePoints(0);
         setChallengePoints(0);
         setChallengeCountry(0);
+        setSitesToVisit([]);
 
         const pool = selectPoolForContinents(poolContinents);
+        setSitesToVisit(selectSites(countries, poolContinents));
         setFilenames(pool.map(item => item.country));
         const countryCount = pool.length;
         const origNdx = Math.floor(Math.random() * countryCount);
@@ -77,6 +81,7 @@ export default function Game(props) {
         const randOrigin = pool[origNdx].country;
         const randDest = pool[destNdx].country;
         setOrigCountry(randOrigin);
+
         setCoords(pool[origNdx].center);
         setDestCountry(randDest);
         setCurrentBorders(pool[origNdx].borders);
@@ -84,8 +89,7 @@ export default function Game(props) {
     }
 
     useEffect(() => {
-        setPoolContinents(['asia']);
-
+        setPoolContinents(['europe']);
     }, []);
 
     useEffect(() => {
@@ -123,10 +127,6 @@ export default function Game(props) {
         }
     }, [challengeCountry])
 
-    function handleOriginClick(e) {
-        //setFilenames(currentBorders);
-    }
-
     function getCountryObject(country) {
         const countryObj = countryPool.find(obj => obj.country === country);
         if (!countryObj) return {};
@@ -159,8 +159,10 @@ export default function Game(props) {
         const countryObj = getCountryObject(countryName);
         setMappingData(_mappingData);
         setCoords(_mappingData.center);
+
         setOrigCountry(countryName);
         setCurrentBorders(countryObj.borders);
+        setSitesToVisit(selectSites(countries, poolContinents));
         setChallengeCountry({});
     }
 
@@ -201,9 +203,7 @@ export default function Game(props) {
 
     function handleItemClick(event) {
         const el = event.currentTarget;
-        const { label, type } = el.dataset;
-        const src = el.src;
-        console.log('====> handleItemClick', el.dataset);
+        const { src, label } = el.dataset;
         setPopupOpen(true);
         setPopupItem({ selected: true, name: label, src, mappingData });
     }
@@ -235,7 +235,9 @@ export default function Game(props) {
                     </div>)}
 
                     <hr className="my-2" />
-                    <Sites handleItemClick={handleItemClick} />
+
+                    <Sites handleItemClick={handleItemClick} sites={sitesToVisit} />
+
                     <hr className="my-2" />
                     {arrived && (<div>
                         <div>YOU HAVE ARRIVED!</div>
@@ -260,8 +262,11 @@ export default function Game(props) {
                 </>)
             }
             {isLoaded ? <div className="bottom-5 fixed left-1/2 transform -translate-x-1/2">
-                <GoogleMap options={{ disableDefaultUI: true }} zoom={ZOOM} center={coords} mapContainerClassName="map-container" />
+                <GoogleMap options={OPTIONS} zoom={ZOOM} center={coords} mapContainerClassName="map-container">
+                    <Border country={origCountry} />
+                </GoogleMap>
             </div> : <div>Not loaded</div>}
         </div>
     )
 }
+

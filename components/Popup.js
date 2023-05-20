@@ -85,7 +85,7 @@ export default function Popup({ handleItemClicked, active, setPopupOpen, popupIt
                             </div>
                             <div>
                                 <div className="flex cursor-pointer justify-center" onClick={handleItemClicked}>
-                                    <img src={popupItem.src} style={thumbStyle} />
+                                    <img data-img={'IMG: ' + popupItem.src} src={popupItem.src} style={thumbStyle} />
                                 </div>
                                 <div className="mt-2 text-center">{popupItem.name}</div>
                             </div>

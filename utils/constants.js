@@ -1,3 +1,6 @@
+export const GEOJSON_URL = 'https://geo.toews-api.com/geojson/';
+export const MAX_SITES = 5;
+
 export const FRAME_WIDTH = 100;
 export const FRAME_HEIGHT = 100;
 
