@@ -3,20 +3,15 @@ import ImageGrid from '@/components/ImageGrid';
 import ContinentSelector from '@/components/ContinentSelector';
 import Sites from '@/components/Sites';
 import Popup from '@/components/Popup';
-import Border from '@/components/Border';
+import CountryMap from '@/components/CountryMap';
 import { getGeoPath } from '../utils/get-path';
 import { normalizeString } from '../utils/helpers';
-import { useLoadScript, GoogleMap } from '@react-google-maps/api';
 import { getMappingData, selectSites } from '../utils/map-helpers';
-import { DEFAULT_ZOOM } from '@/utils/constants';
 
 import countries from '../data/borders.json';
 
 const STARTING_ROUTE_POINTS = 10;
 const POINTS_PER_CHALLENGE = 3;
-const OPTIONS = {
-    disableDefaultUI: true
-};
 
 export default function Game(props) {
     const [popupOpen, setPopupOpen] = useState(false);
@@ -39,10 +34,6 @@ export default function Game(props) {
     const challengeInput = useRef(null);
     const [coords, setCoords] = useState({});
     const [sitesToVisit, setSitesToVisit] = useState(null);
-
-    const { isLoaded } = useLoadScript({
-        googleMapsApiKey: process.env.REACT_APP_API_KEY,
-    });
 
 
     function selectPoolForContinents(continents) {
@@ -266,11 +257,7 @@ export default function Game(props) {
 
                 </>)
             }
-            {isLoaded ? <div className="bottom-5 fixed left-1/2 transform -translate-x-1/2">
-                <GoogleMap options={OPTIONS} zoom={DEFAULT_ZOOM} center={coords} mapContainerClassName="map-container">
-                    <Border country={origCountry} countryObject={countryObject} />
-                </GoogleMap>
-            </div> : <div>Not loaded</div>}
+            <CountryMap countryObject={countryObject} />
         </div>
     )
 }

@@ -77,20 +77,21 @@ export async function getGeoJSON(country) {
 const ZOOM_LEVEL = {
     small: 8,
     medium: 5,
-    large: 2
+    large: 3,
+    russia: 1
 };
 
 const zoomLevels = {
     small: [],
     medium: ['Ukraine'],
-    large: [],
+    large: ['Norway'],
 };
 
 const zoomThresholds = {
     small: [0, 10000],
     medium: [11000, 150000],
     large: [150000, 1500000],
-    huge: [1500000, 999999999]
+    russia: [6000000, 999999999]
 
 }
 
