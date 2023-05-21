@@ -4,6 +4,7 @@ import ContinentSelector from '@/components/ContinentSelector';
 import Sites from '@/components/Sites';
 import Popup from '@/components/Popup';
 import CountryMap from '@/components/CountryMap';
+import DrawerItems from '@/components/DrawerItems';
 import { getGeoPath } from '../utils/get-path';
 import { normalizeString } from '../utils/helpers';
 import { getMappingData, selectSites } from '../utils/map-helpers';
@@ -208,7 +209,7 @@ export default function Game(props) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-8">
             <Popup active={popupOpen} handleItemClick={handleItemClick} setPopupOpen={setPopupOpen} popupItem={popupItem} />
             <div className="h-10">Countries of: {poolContinents}</div>
-            {false && <ContinentSelector continents={poolContinents} setContinentSelection={setContinentSelection} />}
+
 
             {
                 poolContinents.length > 0 && (<>
@@ -257,7 +258,14 @@ export default function Game(props) {
 
                 </>)
             }
-            <CountryMap countryObject={countryObject} />
+            <DrawerItems>
+                <div header="Continent Selector">
+                    <ContinentSelector continents={poolContinents} setContinentSelection={setContinentSelection} />
+                </div>
+                <div header="Map">
+                    <CountryMap countryObject={countryObject} />
+                </div>
+            </DrawerItems>
         </div>
     )
 }

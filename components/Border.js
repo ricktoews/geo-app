@@ -3,7 +3,7 @@ import { useGoogleMap } from '@react-google-maps/api';
 import { adjustZoom, getGeoJSON } from '@/utils/map-helpers';
 import { DEFAULT_ZOOM } from '@/utils/constants';
 import CountrySizes from '@/data/country-sizes.json';
-console.log(CountrySizes);
+
 const countryHighlightStyle = {
     fillColor: 'purple',
     fillOpacity: .5,

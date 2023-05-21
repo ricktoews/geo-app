@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Drawer from './Drawer';
 
 const CHECKED = `bg-purple-500`;
 const UNCHECKED = `bg-gray-500`;
@@ -62,8 +63,7 @@ export default function CheckboxGroup({ continents, setContinentSelection }) {
     }
 
     return (
-        <div className="border border-white rounded-lg my-2">
-            <p className="text-white rounded-t-xl text-center bg-gray-400 font-bold mb-2">Continent Selection</p>
+        <div className="h-60 flex justify-center">
             <div className="flex justify-between px-3">
                 <div className="flex flex-col space-y-3 py-3">
                     <div className="flex space-x-3">
@@ -76,9 +76,7 @@ export default function CheckboxGroup({ continents, setContinentSelection }) {
                         <div><button onClick={handleContinentClicked} data-continent="asia" className={`h-5 rounded-full px-4 py-4 ${buttonColors.asia} text-white flex items-center`}>Asia</button></div>
                     </div>
                 </div>
-
                 <button onClick={handleSetSelection}><img className="bg-white rounded-full h-16" src="/images/green-checkmark.png" /></button>
-
             </div>
         </div>
     );
