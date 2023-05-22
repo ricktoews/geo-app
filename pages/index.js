@@ -259,12 +259,8 @@ export default function Game(props) {
                 </>)
             }
             <DrawerItems>
-                <div header="Continent Selector">
-                    <ContinentSelector continents={poolContinents} setContinentSelection={setContinentSelection} />
-                </div>
-                <div header="Map">
-                    <CountryMap countryObject={countryObject} />
-                </div>
+                <ContinentSelector header="Content Selector" continents={poolContinents} setContinentSelection={setContinentSelection} />
+                <CountryMap header="Map" countryObject={countryObject} />
             </DrawerItems>
         </div>
     )

@@ -3,7 +3,7 @@ import Drawer from './Drawer';
 
 const CHECKED = `bg-purple-500`;
 const UNCHECKED = `bg-gray-500`;
-export default function CheckboxGroup({ continents, setContinentSelection }) {
+export default function CheckboxGroup({ continents, setContinentSelection, hortonHearsAWho }) {
     const [buttonColors, setButtonColors] = useState({
         'north-america': UNCHECKED,
         'south-america': UNCHECKED,
@@ -30,7 +30,6 @@ export default function CheckboxGroup({ continents, setContinentSelection }) {
         const { continent } = el.dataset;
         const toggleToChecked = temp[continent] === UNCHECKED;
         console.log(`====> ${continent} checked ${toggleToChecked}`);
-
         setButtonColors((prevColors) => (
             {
                 ...prevColors,
@@ -50,13 +49,16 @@ export default function CheckboxGroup({ continents, setContinentSelection }) {
 
 
     function handleSetSelection() {
-        console.log('====> handleSetSelection', buttonColors);
         const selection = {};
         for (let b in buttonColors) {
             selection[b] = false;
             if (buttonColors[b] === CHECKED) {
                 selection[b] = true;
             }
+        }
+        // Notify DrawerItems to close drawer.
+        if (hortonHearsAWho) {
+            hortonHearsAWho(selection);
         }
 
         setContinentSelection(selection);

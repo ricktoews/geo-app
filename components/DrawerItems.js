@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useLoadScript, GoogleMap } from '@react-google-maps/api';
 import Drawer from './Drawer';
 import ContinentSelector from './ContinentSelector';
@@ -10,6 +10,19 @@ export default function DrawerItems({ children, headings = [], position = 'top' 
 
     const drawers = children.map(child => child.props.header);
 
+    // Receive notification from Drawer.
+    function hortonHearsAWho(data) {
+        const _drawerState = drawerState.slice(0);
+        for (let s in _drawerState) { _drawerState[s] = false; }
+        setDrawerState(_drawerState);
+    }
+
+    // Clone child component. This is so a component can be put in a drawer without having to alter it directly.
+    function cloneComponent(child) {
+        return React.cloneElement(child, { hortonHearsAWho });
+        return child;
+    }
+
     function handleClick(e) {
         const el = e.currentTarget;
         const { drawer } = el.dataset;
@@ -18,6 +31,7 @@ export default function DrawerItems({ children, headings = [], position = 'top' 
         _drawerState[drawer] = !_drawerState[drawer];
         setDrawerState(_drawerState);
     }
+
 
     return (<div id="drawerWrapper" className="relative z-0">
         {/* Draw drawers */}
@@ -31,7 +45,7 @@ export default function DrawerItems({ children, headings = [], position = 'top' 
         {/* Draw drawer contents */}
         {children.map((child, ndx) => {
             return (<div key={ndx} className={`${drawerState[ndx] ? 'translate-y-0' : '-translate-y-60'} z-0 h-60 w-full fixed top-8 left-0 duration-500 bg-slate-600 border border-white`}>
-                {child}
+                {cloneComponent(child)}
             </div>)
         })}
 
