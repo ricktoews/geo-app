@@ -75,16 +75,52 @@ export async function getGeoJSON(country) {
 }
 
 const ZOOM_LEVEL = {
-    small: 8,
-    medium: 5,
+    tiny: 9,
+    small: 7,
+    medium: 4,
     large: 3,
     russia: 1
 };
 
 const zoomLevels = {
-    small: [],
-    medium: ['Ukraine'],
-    large: ['Norway'],
+    tiny: ['Monaco', 'San Marino', 'Vatican City'],
+    small: ['Andorra', 'Liechtenstein', 'Luxembourg'],
+    medium: [
+        "Albania",
+        "Austria",
+        "Belarus",
+        "Belgium",
+        "Bosnia and Herzegovina",
+        "Bulgaria",
+        "Croatia",
+        "Czechia",
+        "Denmark",
+        "Estonia",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Italy",
+        "Kosovo",
+        "Latvia",
+        "Lithuania",
+        "Moldova",
+        "Montenegro",
+        "Netherlands",
+        "North Macedonia",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Serbia",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Switzerland",
+        "Turkey",
+        "Ukraine"
+    ],
+    large: ['Finland', 'Norway', 'Sweden'],
+    russia: ['Russia'],
 };
 
 const zoomThresholds = {
@@ -96,27 +132,25 @@ const zoomThresholds = {
 }
 
 export function adjustZoom(country, sizeObj) {
-    console.log('====> adjustZoom; size', sizeObj);
-    const sqMiles = sizeObj?.sq_miles || 100000;
-    let zoomLevel = -1;
+    // Attempt to get zoom level by country name.
     for (let size in zoomLevels) {
         if (zoomLevels[size].indexOf(country) !== -1) {
+            return ZOOM_LEVEL[size];
+        }
+    }
+
+    // If no zoom level specified for country, attempt by square miles.
+    const sqMiles = sizeObj?.sq_miles || 100000;
+    for (let size in zoomThresholds) {
+        const threshold = zoomThresholds[size];
+        const min = threshold[0];
+        const max = threshold[1];
+        if (sqMiles >= min && sqMiles < max) {
             zoomLevel = ZOOM_LEVEL[size];
+            return ZOOM_LEVEL[size];
         }
     }
 
-    if (zoomLevel === -1) {
-        for (let size in zoomThresholds) {
-            const threshold = zoomThresholds[size];
-            const min = threshold[0];
-            const max = threshold[1];
-            if (sqMiles >= min && sqMiles < max) {
-                zoomLevel = ZOOM_LEVEL[size];
-            }
-        }
-    }
-
-    if (zoomLevel === -1) zoomLevel = DEFAULT_ZOOM;
-
-    return zoomLevel;
+    // Otherwise...
+    return DEFAULT_ZOOM;
 }

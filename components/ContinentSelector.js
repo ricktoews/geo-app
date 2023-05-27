@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Drawer from './Drawer';
 
 const CHECKED = `bg-purple-500`;
 const UNCHECKED = `bg-gray-500`;
@@ -65,9 +64,9 @@ export default function CheckboxGroup({ continents, setContinentSelection, horto
     }
 
     return (
-        <div className="h-60 flex justify-center">
-            <div className="flex justify-between px-3">
-                <div className="flex flex-col space-y-3 py-3">
+        <div className="flex justify-center">
+            <div className="flex justify-evenly space-x-3 px-3">
+                <div className="flex flex-col justify-center space-y-3 py-3">
                     <div className="flex space-x-3">
                         <div><button onClick={handleContinentClicked} data-continent="north-america" className={`whitespace-normal text-xs leading-none h-5 rounded-full px-4 py-4 ${buttonColors['north-america']} text-white flex items-center`}>North America</button></div>
                         <div><button onClick={handleContinentClicked} data-continent="south-america" className={`whitespace-normal text-xs leading-none h-5 rounded-full px-4 py-4 ${buttonColors['south-america']} text-white flex items-center`}>South America</button></div>
@@ -78,7 +77,7 @@ export default function CheckboxGroup({ continents, setContinentSelection, horto
                         <div><button onClick={handleContinentClicked} data-continent="asia" className={`h-5 rounded-full px-4 py-4 ${buttonColors.asia} text-white flex items-center`}>Asia</button></div>
                     </div>
                 </div>
-                <button onClick={handleSetSelection}><img className="bg-white rounded-full h-16" src="/images/green-checkmark.png" /></button>
+                <button onClick={handleSetSelection}><img className="bg-white rounded-full h-12" src="/images/green-checkmark.png" /></button>
             </div>
         </div>
     );
