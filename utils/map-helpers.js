@@ -1,4 +1,5 @@
 import { MAX_SITES, GEOJSON_URL, DEFAULT_ZOOM } from '@/utils/constants';
+import ZOOM_LEVELS from '@/data/zoom-levels.json';
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -74,80 +75,168 @@ export async function getGeoJSON(country) {
     return result;
 }
 
-const ZOOM_LEVEL = {
-    tiny: 9,
-    small: 7,
-    medium: 4,
-    large: 3,
-    russia: 1
-};
 
-const zoomLevels = {
-    tiny: ['Monaco', 'San Marino', 'Vatican City'],
-    small: ['Andorra', 'Liechtenstein', 'Luxembourg'],
-    medium: [
-        "Albania",
-        "Austria",
-        "Belarus",
-        "Belgium",
-        "Bosnia and Herzegovina",
-        "Bulgaria",
-        "Croatia",
-        "Czechia",
-        "Denmark",
-        "Estonia",
-        "France",
-        "Germany",
-        "Greece",
-        "Hungary",
-        "Italy",
-        "Kosovo",
-        "Latvia",
-        "Lithuania",
-        "Moldova",
-        "Montenegro",
-        "Netherlands",
-        "North Macedonia",
-        "Poland",
-        "Portugal",
-        "Romania",
-        "Serbia",
-        "Slovakia",
-        "Slovenia",
-        "Spain",
-        "Switzerland",
-        "Turkey",
-        "Ukraine"
-    ],
-    large: ['Finland', 'Norway', 'Sweden'],
-    russia: ['Russia'],
-};
+/*
+const ZOOM_LEVELS = {};
 
-const zoomThresholds = {
-    small: [0, 10000],
-    medium: [11000, 150000],
-    large: [150000, 1500000],
-    russia: [6000000, 999999999]
-
+ZOOM_LEVELS['Europe'] = {
+    "9": ['Monaco', 'San Marino', 'Vatican City'],
+    "7": ['Andorra', 'Liechtenstein', 'Luxembourg'],
+    "4": ["Albania", "Austria", "Belarus", "Belgium", "Bosnia and Herzegovina", "Bulgaria", "Croatia", "Czechia", "Denmark", "Estonia", "France", "Germany", "Greece", "Hungary", "Italy", "Kosovo", "Latvia", "Lithuania", "Moldova", "Montenegro", "Netherlands", "North Macedonia", "Poland", "Portugal", "Romania", "Serbia", "Slovakia", "Slovenia", "Spain", "Switzerland", "Turkey", "Ukraine"],
+    "3": ['Finland', 'Norway', 'Sweden'],
+    "1": ['Russia']
 }
 
-export function adjustZoom(country, sizeObj) {
-    // Attempt to get zoom level by country name.
-    for (let size in zoomLevels) {
-        if (zoomLevels[size].indexOf(country) !== -1) {
-            return ZOOM_LEVEL[size];
-        }
-    }
+ZOOM_LEVELS['South America'] = {
+    "5": [
+        "Suriname"
+    ],
+    "4": [
+        "Uruguay",
+        "Venezuela",
+        "Ecuador",
+        "Guyana"
+    ],
+    "3": [
+        "Bolivia",
+        "Colombia",
+        "Paraguay",
+        "Peru"
+    ],
+    "2": ['Argentina', 'Brazil', 'Chile']
+}
 
-    // If no zoom level specified for country, attempt by square miles.
-    const sqMiles = sizeObj?.sq_miles || 100000;
-    for (let size in zoomThresholds) {
-        const threshold = zoomThresholds[size];
-        const min = threshold[0];
-        const max = threshold[1];
-        if (sqMiles >= min && sqMiles < max) {
-            zoomLevel = ZOOM_LEVEL[size];
-            return ZOOM_LEVEL[size];
+ZOOM_LEVELS['North America'] = {
+    "5": ["Belize", "Costa Rica", "El Salvador", "Guatemala", "Honduras", "Nicaragua", "Panama"],
+    "3": ['Mexico'],
+    "2": ['Canada', 'United States'],
+}
+
+ZOOM_LEVELS['Africa'] = {
+    "3": [
+        "Algeria",
+        "Angola",
+        "Botswana",
+        "Cameroon",
+        "Central African Republic",
+        "Chad",
+        "Democratic Republic of the Congo",
+        "Republic of the Congo",
+        "Ivory Coast",
+        "Egypt",
+        "Ethiopia",
+        "Kenya",
+        "Libya",
+        "Mali",
+        "Mauritania",
+        "Morocco",
+        "Mozambique",
+        "Namibia",
+        "Niger",
+        "Nigeria",
+        "Somalia",
+        "South Africa",
+        "South Sudan",
+        "Sudan",
+        "Tanzania",
+        "Zambia",
+        "Zimbabwe"
+    ],
+    "4": [
+        "Burkina Faso",
+        "Eritrea",
+        "Gabon",
+        "Ghana",
+        "Guinea",
+        "Malawi",
+        "Tunisia",
+        "Uganda"
+    ],
+    "5": [
+        "Benin",
+        "Burundi",
+        "Equatorial Guinea",
+        "The Gambia",
+        "Liberia",
+        "Senegal",
+        "Sierra Leone",
+        "Togo"
+    ],
+    "6": [
+        "Djibouti",
+        "Eswatini",
+        "Guinea-Bissau",
+        "Lesotho",
+        "Rwanda"
+    ]
+}
+
+ZOOM_LEVELS['Asia'] = {
+    "1": [
+        "Russia"
+    ],
+    "2": [
+        "China",
+        "Kazakhstan"
+    ],
+    "3": [
+        "India",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Malaysia",
+        "Mongolia",
+        "Myanmar",
+        "Pakistan",
+        "Saudi Arabia",
+        "Thailand"
+    ],
+    "4": [
+        "Afghanistan",
+        "Kyrgyzstan",
+        "Laos",
+        "Nepal",
+        "Oman",
+        "Syria",
+        "Tajikistan",
+        "Turkey",
+        "Turkmenistan",
+        "Uzbekistan",
+        "Vietnam",
+        "Yemen"
+    ],
+    "5": [
+        "Armenia",
+        "Azerbaijan",
+        "Bangladesh",
+        "Bhutan",
+        "Cambodia",
+        "East Timor",
+        "Georgia",
+        "Israel",
+        "Jordan",
+        "North Korea",
+        "South Korea",
+        "Palestine",
+        "United Arab Emirates"
+    ],
+    "6": [
+        "Kuwait",
+        "Lebanon",
+        "Qatar"
+    ],
+    "7": [
+        "Brunei"
+    ]
+}*/
+
+export function adjustZoom(country, continent) {
+    // Attempt to get zoom level by country name.
+    const zoomLevels = ZOOM_LEVELS[continent];
+    for (let zoom in zoomLevels) {
+        if (zoomLevels[zoom].indexOf(country) !== -1) {
+            const numericZoom = parseInt(zoom, 10);
+            return numericZoom;
         }
     }
 

@@ -208,7 +208,8 @@ export default function Game(props) {
     return !origCountry || !destCountry ? null : (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-8">
             <Popup active={popupOpen} handleItemClick={handleItemClick} setPopupOpen={setPopupOpen} popupItem={popupItem} />
-            <div className="h-10">Countries of: {poolContinents}</div>
+            {/* Really hacky way to display continent name(s) */}
+            <div className="h-10">{poolContinents.map(c => c.slice(0, 1).toUpperCase() + c.slice(1)).join(', ')}</div>
 
 
             {

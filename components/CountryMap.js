@@ -12,11 +12,11 @@ export default function CountryMap({ countryObject }) {
         googleMapsApiKey: process.env.REACT_APP_API_KEY,
     });
 
-    const { country, center } = countryObject;
+    const { country, center, continent } = countryObject;
     return (<>
         {isLoaded ? (<div className="flex justify-center">
             <GoogleMap options={OPTIONS} zoom={DEFAULT_ZOOM} center={center} mapContainerClassName="map-container">
-                <Border country={country} />
+                <Border country={country} continent={continent} />
             </GoogleMap>
         </div>) : null}
 

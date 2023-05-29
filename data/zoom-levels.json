@@ -1,0 +1,212 @@
+{
+    "Europe": {
+        "9": [
+            "Monaco",
+            "San Marino",
+            "Vatican City"
+        ],
+        "7": [
+            "Andorra",
+            "Liechtenstein",
+            "Luxembourg"
+        ],
+        "4": [
+            "Albania",
+            "Austria",
+            "Belarus",
+            "Belgium",
+            "Bosnia and Herzegovina",
+            "Bulgaria",
+            "Croatia",
+            "Czechia",
+            "Denmark",
+            "Estonia",
+            "France",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Italy",
+            "Kosovo",
+            "Latvia",
+            "Lithuania",
+            "Moldova",
+            "Montenegro",
+            "Netherlands",
+            "North Macedonia",
+            "Poland",
+            "Portugal",
+            "Romania",
+            "Serbia",
+            "Slovakia",
+            "Slovenia",
+            "Spain",
+            "Switzerland",
+            "Turkey",
+            "Ukraine"
+        ],
+        "3": [
+            "Finland",
+            "Norway",
+            "Sweden"
+        ],
+        "1": [
+            "Russia"
+        ]
+    },
+    "South America": {
+        "5": [
+            "Suriname"
+        ],
+        "4": [
+            "Uruguay",
+            "Venezuela",
+            "Ecuador",
+            "Guyana"
+        ],
+        "3": [
+            "Bolivia",
+            "Colombia",
+            "Paraguay",
+            "Peru"
+        ],
+        "2": [
+            "Argentina",
+            "Brazil",
+            "Chile"
+        ]
+    },
+    "North America": {
+        "5": [
+            "Belize",
+            "Costa Rica",
+            "El Salvador",
+            "Guatemala",
+            "Honduras",
+            "Nicaragua",
+            "Panama"
+        ],
+        "3": [
+            "Mexico"
+        ],
+        "2": [
+            "Canada",
+            "United States"
+        ]
+    },
+    "Africa": {
+        "3": [
+            "Algeria",
+            "Angola",
+            "Botswana",
+            "Cameroon",
+            "Central African Republic",
+            "Chad",
+            "Democratic Republic of the Congo",
+            "Republic of the Congo",
+            "Ivory Coast",
+            "Egypt",
+            "Ethiopia",
+            "Kenya",
+            "Libya",
+            "Mali",
+            "Mauritania",
+            "Morocco",
+            "Mozambique",
+            "Namibia",
+            "Niger",
+            "Nigeria",
+            "Somalia",
+            "South Africa",
+            "South Sudan",
+            "Sudan",
+            "Tanzania",
+            "Zambia",
+            "Zimbabwe"
+        ],
+        "4": [
+            "Burkina Faso",
+            "Eritrea",
+            "Gabon",
+            "Ghana",
+            "Guinea",
+            "Malawi",
+            "Tunisia",
+            "Uganda"
+        ],
+        "5": [
+            "Benin",
+            "Burundi",
+            "Equatorial Guinea",
+            "The Gambia",
+            "Liberia",
+            "Senegal",
+            "Sierra Leone",
+            "Togo"
+        ],
+        "6": [
+            "Djibouti",
+            "Eswatini",
+            "Guinea-Bissau",
+            "Lesotho",
+            "Rwanda"
+        ]
+    },
+    "Asia": {
+        "1": [
+            "Russia"
+        ],
+        "2": [
+            "China",
+            "Kazakhstan"
+        ],
+        "3": [
+            "India",
+            "Indonesia",
+            "Iran",
+            "Iraq",
+            "Malaysia",
+            "Mongolia",
+            "Myanmar",
+            "Pakistan",
+            "Saudi Arabia",
+            "Thailand"
+        ],
+        "4": [
+            "Afghanistan",
+            "Kyrgyzstan",
+            "Laos",
+            "Nepal",
+            "Oman",
+            "Syria",
+            "Tajikistan",
+            "Turkey",
+            "Turkmenistan",
+            "Uzbekistan",
+            "Vietnam",
+            "Yemen"
+        ],
+        "5": [
+            "Armenia",
+            "Azerbaijan",
+            "Bangladesh",
+            "Bhutan",
+            "Cambodia",
+            "East Timor",
+            "Georgia",
+            "Israel",
+            "Jordan",
+            "North Korea",
+            "South Korea",
+            "Palestine",
+            "United Arab Emirates"
+        ],
+        "6": [
+            "Kuwait",
+            "Lebanon",
+            "Qatar"
+        ],
+        "7": [
+            "Brunei"
+        ]
+    }
+}
